@@ -8,9 +8,9 @@ Small adjustments were made to base colour brightness in order to snap values to
 
 ## screenshots
 
-![flattened_dark](screenshots/flattened_dark.png)
+![stellarized_dark](screenshots/stellarized_dark.png)
 
-![flattened_light](screenshots/flattened_light.png)
+![stellarized_light](screenshots/stellarized_light.png)
 
 ## installation
 
