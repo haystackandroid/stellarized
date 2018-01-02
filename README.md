@@ -11,8 +11,8 @@ Small adjustments were made to base colour brightness in order to snap values to
 <table>
 <tbody>
 <tr>
-<td>stellarized_dark</td>
-<td>stellarized_light</td>
+<td style="text-align:center;font-weight:bold">stellarized_dark</td>
+<td style="text-align:center;font-weight:bold">stellarized_light</td>
 </tr>
 <tr>
 <td>
