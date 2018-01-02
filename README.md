@@ -8,9 +8,22 @@ Small adjustments were made to base colour brightness in order to snap values to
 
 ## screenshots
 
-stellarized_dark | stellarized_light
-:---------------:|:----------------:
-![stellarized_dark](screenshots/stellarized_dark.png) | ![stellarized_light](screenshots/stellarized_light.png)
+<table>
+<tbody>
+<tr>
+<td>stellarized_dark</td>
+<td>stellarized_light</td>
+</tr>
+<tr>
+<td>
+<img src="screenshots/stellarized_dark.png" alt="screenshot of stellarized dark, a theme that paints vim with the colours of the stars" width="180">
+</td>
+<td>
+<img src="screenshots/stellarized_light.png" alt="screenshot of stellarized light, a theme that paints vim with the colours of the stars" width="180">
+</td>
+</tr>
+</tbody>
+</table>
 
 ## installation
 
