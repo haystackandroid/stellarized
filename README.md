@@ -27,7 +27,7 @@ Small adjustments were made to base colour brightness in order to snap values to
 
 ## installation
 
-If you don’t have a preferred **plugin helper**, consider trying [vim-plug](<a href="https://github.com/junegunn/vim-plug), which can be installed with:
+If you don’t have a preferred **plugin helper**, consider trying [vim-plug](https://github.com/junegunn/vim-plug), which can be installed with:
 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
