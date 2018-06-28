@@ -1,3 +1,11 @@
+**Note: this repository is archived for now, though I may rebuild it from scratch at some point. My active vim theme is [snow](https://github.com/nightsense/snow).**
+
+.
+
+.
+
+.
+
 # stellarized
 
 The [solarized](http://ethanschoonover.com/solarized) theme, inspired by reading a book under a shady tree on a sunny day, features a palette of base colours that grade from dark, highly saturated green-blue (hue 192) to bright, lightly saturated orange-yellow (hue 44).
