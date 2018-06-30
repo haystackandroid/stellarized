@@ -1,21 +1,21 @@
 let g:airline#themes#stellarized#palette = {}
 
 if &background ==# 'light'
-  let s:gry0 = [ '#fcf1e4', 235 ]
-  let s:gry1 = [ '#e4dacc', 237 ]
-  let s:gry3 = [ '#616170', 247 ]
-  let s:red_ = [ '#ea5a44', 167 ]
-  let s:orng = [ '#d07018', 137 ]
-  let s:gren = [ '#4d991b', 65  ]
-  let s:blue = [ '#008beb', 67  ]
+  let s:gry0 = [ '#fcf1e4', 255 ]
+  let s:gry1 = [ '#e4dacc', 253 ]
+  let s:gry3 = [ '#616170', 241 ]
+  let s:red_ = [ '#ea5a44', 203 ]
+  let s:orng = [ '#d07018', 166 ]
+  let s:gren = [ '#4d991b', 70  ]
+  let s:blue = [ '#008beb', 32  ]
 else
-  let s:gry0 = [ '#282835', 255 ]
-  let s:gry1 = [ '#3a3b47', 253 ]
-  let s:gry3 = [ '#aba194', 241 ]
-  let s:red_ = [ '#c87361', 203 ]
-  let s:orng = [ '#b87c4e', 166 ]
-  let s:gren = [ '#6d9353', 70  ]
-  let s:blue = [ '#5f87b7', 32  ]
+  let s:gry0 = [ '#282835', 235 ]
+  let s:gry1 = [ '#3a3b47', 237 ]
+  let s:gry3 = [ '#aba194', 247 ]
+  let s:red_ = [ '#c87361', 167 ]
+  let s:orng = [ '#b87c4e', 137 ]
+  let s:gren = [ '#6d9353', 65  ]
+  let s:blue = [ '#5f87b7', 67  ]
 endif
 
 let s:nrm1 = [ s:gry0[0] , s:gry3[0] , s:gry0[1] , s:gry3[1] ]
