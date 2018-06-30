@@ -65,8 +65,8 @@ if &background ==# 'dark'
   hi Pmenu ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi QuickFixLine ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi SignColumn ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
-  hi StatusLineNC ctermfg=244 ctermbg=237 guifg=#8a8074 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
-  hi StatusLineTermNC ctermfg=244 ctermbg=237 guifg=#8a8074 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
+  hi StatusLineNC ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
+  hi StatusLineTermNC ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi TabLine ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi TabLineFill ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi WildMenu ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
@@ -176,8 +176,8 @@ hi Folded ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=N
 hi Pmenu ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi QuickFixLine ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi SignColumn ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
-hi StatusLineNC ctermfg=244 ctermbg=253 guifg=#80818f guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
-hi StatusLineTermNC ctermfg=244 ctermbg=253 guifg=#80818f guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
+hi StatusLineNC ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
+hi StatusLineTermNC ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi TabLine ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi TabLineFill ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi WildMenu ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
@@ -286,8 +286,8 @@ finish
 " Pmenu              gry3   gry1
 " QuickFixLine       gry3   gry1
 " SignColumn         gry3   gry1
-" StatusLineNC       gry2   gry1
-" StatusLineTermNC   gry2   gry1
+" StatusLineNC       gry3   gry1
+" StatusLineTermNC   gry3   gry1
 " TabLine            gry3   gry1
 " TabLineFill        gry3   gry1
 " WildMenu           gry3   gry1
@@ -393,8 +393,8 @@ finish
 " Pmenu              gry3   gry1
 " QuickFixLine       gry3   gry1
 " SignColumn         gry3   gry1
-" StatusLineNC       gry2   gry1
-" StatusLineTermNC   gry2   gry1
+" StatusLineNC       gry3   gry1
+" StatusLineTermNC   gry3   gry1
 " TabLine            gry3   gry1
 " TabLineFill        gry3   gry1
 " WildMenu           gry3   gry1

@@ -42,8 +42,8 @@ Folded             gry3   gry1
 Pmenu              gry3   gry1
 QuickFixLine       gry3   gry1
 SignColumn         gry3   gry1
-StatusLineNC       gry2   gry1
-StatusLineTermNC   gry2   gry1
+StatusLineNC       gry3   gry1
+StatusLineTermNC   gry3   gry1
 TabLine            gry3   gry1
 TabLineFill        gry3   gry1
 WildMenu           gry3   gry1
