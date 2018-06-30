@@ -32,8 +32,10 @@ if &background ==# 'dark'
   " gry0: GUI=#282835/rgb( 40, 40, 53)  Term=235 #262626/rgb( 38, 38, 38)  [delta=8.139087]
   hi Bold ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
   hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
+  hi DiffChange ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Directory ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
   hi EndOfBuffer ctermfg=247 ctermbg=NONE guifg=#aba194 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+  hi FoldColumn ctermfg=247 ctermbg=NONE guifg=#aba194 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Ignore ctermfg=247 ctermbg=NONE guifg=#aba194 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Italic ctermfg=247 ctermbg=NONE guifg=#aba194 guibg=NONE guisp=NONE cterm=NONE,italic gui=NONE,italic
   hi NonText ctermfg=247 ctermbg=NONE guifg=#aba194 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -43,7 +45,6 @@ if &background ==# 'dark'
   hi Underlined ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,underline gui=NONE,underline
   hi Comment ctermfg=244 ctermbg=NONE guifg=#8a8074 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi CursorLineNr ctermfg=244 ctermbg=NONE guifg=#8a8074 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi DiffChange ctermfg=244 ctermbg=NONE guifg=#8a8074 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi LineNr ctermfg=244 ctermbg=NONE guifg=#8a8074 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Cursor ctermfg=235 ctermbg=247 guifg=#282835 guibg=#aba194 guisp=NONE cterm=NONE gui=NONE
   hi PmenuSel ctermfg=235 ctermbg=247 guifg=#282835 guibg=#aba194 guisp=NONE cterm=NONE gui=NONE
@@ -51,7 +52,6 @@ if &background ==# 'dark'
   hi StatusLineTerm ctermfg=235 ctermbg=247 guifg=#282835 guibg=#aba194 guisp=NONE cterm=NONE gui=NONE
   hi TabLineSel ctermfg=235 ctermbg=247 guifg=#282835 guibg=#aba194 guisp=NONE cterm=NONE gui=NONE
   hi ToolbarButton ctermfg=235 ctermbg=247 guifg=#282835 guibg=#aba194 guisp=NONE cterm=NONE gui=NONE
-  hi FoldColumn ctermfg=235 ctermbg=244 guifg=#282835 guibg=#8a8074 guisp=NONE cterm=NONE gui=NONE
   hi IncSearch ctermfg=235 ctermbg=244 guifg=#282835 guibg=#8a8074 guisp=NONE cterm=NONE gui=NONE
   hi TermCursor ctermfg=235 ctermbg=244 guifg=#282835 guibg=#8a8074 guisp=NONE cterm=NONE gui=NONE
   hi TermCursorNC ctermfg=235 ctermbg=244 guifg=#282835 guibg=#8a8074 guisp=NONE cterm=NONE gui=NONE
@@ -68,12 +68,12 @@ if &background ==# 'dark'
   hi StatusLineNC ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi StatusLineTermNC ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi TabLine ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
-  hi TabLineFill ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi WildMenu ctermfg=247 ctermbg=237 guifg=#aba194 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi PmenuSbar ctermfg=237 ctermbg=237 guifg=#3a3b47 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi PmenuThumb ctermfg=244 ctermbg=244 guifg=#8a8074 guibg=#8a8074 guisp=NONE cterm=NONE gui=NONE
+  hi TabLineFill ctermfg=237 ctermbg=237 guifg=#3a3b47 guibg=#3a3b47 guisp=NONE cterm=NONE gui=NONE
   hi ToolbarLine ctermfg=247 ctermbg=247 guifg=#aba194 guibg=#aba194 guisp=NONE cterm=NONE gui=NONE
-  hi DiffDelete ctermfg=167 ctermbg=NONE guifg=#c87361 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+  hi DiffDelete ctermfg=NONE ctermbg=167 guifg=NONE guibg=#c87361 guisp=NONE cterm=NONE gui=NONE
   hi DiffRemoved ctermfg=167 ctermbg=NONE guifg=#c87361 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Error ctermfg=167 ctermbg=NONE guifg=#c87361 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi ErrorMsg ctermfg=167 ctermbg=NONE guifg=#c87361 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -82,7 +82,7 @@ if &background ==# 'dark'
   hi WarningMsg ctermfg=167 ctermbg=NONE guifg=#c87361 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Define ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi DiffChanged ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi DiffText ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
+  hi DiffText ctermfg=NONE ctermbg=137 guifg=NONE guibg=#b87c4e guisp=NONE cterm=NONE gui=NONE
   hi Include ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Macro ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi PreCondit ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -90,7 +90,7 @@ if &background ==# 'dark'
   hi Question ctermfg=137 ctermbg=NONE guifg=#b87c4e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#b87c4e cterm=NONE,undercurl gui=NONE,undercurl
   hi Conditional ctermfg=65 ctermbg=NONE guifg=#6d9353 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi DiffAdd ctermfg=65 ctermbg=NONE guifg=#6d9353 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+  hi DiffAdd ctermfg=NONE ctermbg=65 guifg=NONE guibg=#6d9353 guisp=NONE cterm=NONE gui=NONE
   hi DiffAdded ctermfg=65 ctermbg=NONE guifg=#6d9353 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Exception ctermfg=65 ctermbg=NONE guifg=#6d9353 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Keyword ctermfg=65 ctermbg=NONE guifg=#6d9353 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -143,8 +143,10 @@ endif
 " gry4: GUI=#282835/rgb( 40, 40, 53)  Term=235 #262626/rgb( 38, 38, 38)  [delta=8.139087]
 hi Bold ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi DiffChange ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Directory ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi EndOfBuffer ctermfg=241 ctermbg=NONE guifg=#616170 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi FoldColumn ctermfg=241 ctermbg=NONE guifg=#616170 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Ignore ctermfg=241 ctermbg=NONE guifg=#616170 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Italic ctermfg=241 ctermbg=NONE guifg=#616170 guibg=NONE guisp=NONE cterm=NONE,italic gui=NONE,italic
 hi NonText ctermfg=241 ctermbg=NONE guifg=#616170 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -154,7 +156,6 @@ hi Title ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,b
 hi Underlined ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi Comment ctermfg=244 ctermbg=NONE guifg=#80818f guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=244 ctermbg=NONE guifg=#80818f guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi DiffChange ctermfg=244 ctermbg=NONE guifg=#80818f guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi LineNr ctermfg=244 ctermbg=NONE guifg=#80818f guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Cursor ctermfg=255 ctermbg=241 guifg=#fcf1e4 guibg=#616170 guisp=NONE cterm=NONE gui=NONE
 hi PmenuSel ctermfg=255 ctermbg=241 guifg=#fcf1e4 guibg=#616170 guisp=NONE cterm=NONE gui=NONE
@@ -162,7 +163,6 @@ hi StatusLine ctermfg=255 ctermbg=241 guifg=#fcf1e4 guibg=#616170 guisp=NONE cte
 hi StatusLineTerm ctermfg=255 ctermbg=241 guifg=#fcf1e4 guibg=#616170 guisp=NONE cterm=NONE gui=NONE
 hi TabLineSel ctermfg=255 ctermbg=241 guifg=#fcf1e4 guibg=#616170 guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=255 ctermbg=241 guifg=#fcf1e4 guibg=#616170 guisp=NONE cterm=NONE gui=NONE
-hi FoldColumn ctermfg=255 ctermbg=244 guifg=#fcf1e4 guibg=#80818f guisp=NONE cterm=NONE gui=NONE
 hi IncSearch ctermfg=255 ctermbg=244 guifg=#fcf1e4 guibg=#80818f guisp=NONE cterm=NONE gui=NONE
 hi TermCursor ctermfg=255 ctermbg=244 guifg=#fcf1e4 guibg=#80818f guisp=NONE cterm=NONE gui=NONE
 hi TermCursorNC ctermfg=255 ctermbg=244 guifg=#fcf1e4 guibg=#80818f guisp=NONE cterm=NONE gui=NONE
@@ -179,12 +179,12 @@ hi SignColumn ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cte
 hi StatusLineNC ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi StatusLineTermNC ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi TabLine ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
-hi TabLineFill ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi WildMenu ctermfg=241 ctermbg=253 guifg=#616170 guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi PmenuSbar ctermfg=253 ctermbg=253 guifg=#e4dacc guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi PmenuThumb ctermfg=244 ctermbg=244 guifg=#80818f guibg=#80818f guisp=NONE cterm=NONE gui=NONE
+hi TabLineFill ctermfg=253 ctermbg=253 guifg=#e4dacc guibg=#e4dacc guisp=NONE cterm=NONE gui=NONE
 hi ToolbarLine ctermfg=241 ctermbg=241 guifg=#616170 guibg=#616170 guisp=NONE cterm=NONE gui=NONE
-hi DiffDelete ctermfg=203 ctermbg=NONE guifg=#ea5a44 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi DiffDelete ctermfg=NONE ctermbg=203 guifg=NONE guibg=#ea5a44 guisp=NONE cterm=NONE gui=NONE
 hi DiffRemoved ctermfg=203 ctermbg=NONE guifg=#ea5a44 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Error ctermfg=203 ctermbg=NONE guifg=#ea5a44 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi ErrorMsg ctermfg=203 ctermbg=NONE guifg=#ea5a44 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -193,7 +193,7 @@ hi TooLong ctermfg=203 ctermbg=NONE guifg=#ea5a44 guibg=NONE guisp=NONE cterm=NO
 hi WarningMsg ctermfg=203 ctermbg=NONE guifg=#ea5a44 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Define ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi DiffChanged ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi DiffText ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi DiffText ctermfg=NONE ctermbg=166 guifg=NONE guibg=#d07018 guisp=NONE cterm=NONE gui=NONE
 hi Include ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Macro ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi PreCondit ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -201,7 +201,7 @@ hi PreProc ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NO
 hi Question ctermfg=166 ctermbg=NONE guifg=#d07018 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#d07018 cterm=NONE,undercurl gui=NONE,undercurl
 hi Conditional ctermfg=70 ctermbg=NONE guifg=#4d991b guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi DiffAdd ctermfg=70 ctermbg=NONE guifg=#4d991b guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi DiffAdd ctermfg=NONE ctermbg=70 guifg=NONE guibg=#4d991b guisp=NONE cterm=NONE gui=NONE
 hi DiffAdded ctermfg=70 ctermbg=NONE guifg=#4d991b guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Exception ctermfg=70 ctermbg=NONE guifg=#4d991b guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Keyword ctermfg=70 ctermbg=NONE guifg=#4d991b guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -253,8 +253,10 @@ finish
 " Color:      pink #e16177 ~
 " Bold               none   none   bold
 " Conceal            none   none
+" DiffChange         none   none
 " Directory          none   none   bold
 " EndOfBuffer        gry3   none
+" FoldColumn         gry3   none
 " Ignore             gry3   none
 " Italic             gry3   none   italic
 " NonText            gry3   none
@@ -264,7 +266,6 @@ finish
 " Underlined         none   none   underline
 " Comment            gry2   none
 " CursorLineNr       gry2   none
-" DiffChange         gry2   none
 " LineNr             gry2   none
 " Cursor             gry0   gry3
 " PmenuSel           gry0   gry3
@@ -272,7 +273,6 @@ finish
 " StatusLineTerm     gry0   gry3
 " TabLineSel         gry0   gry3
 " ToolbarButton      gry0   gry3
-" FoldColumn         gry0   gry2
 " IncSearch          gry0   gry2
 " TermCursor         gry0   gry2
 " TermCursorNC       gry0   gry2
@@ -289,12 +289,12 @@ finish
 " StatusLineNC       gry3   gry1
 " StatusLineTermNC   gry3   gry1
 " TabLine            gry3   gry1
-" TabLineFill        gry3   gry1
 " WildMenu           gry3   gry1
 " PmenuSbar          gry1   gry1
 " PmenuThumb         gry2   gry2
+" TabLineFill        gry1   gry1
 " ToolbarLine        gry3   gry3
-" DiffDelete         red_   none
+" DiffDelete         none   red_
 " DiffRemoved        red_   none
 " Error              red_   none
 " ErrorMsg           red_   none
@@ -303,7 +303,7 @@ finish
 " WarningMsg         red_   none
 " Define             orng   none
 " DiffChanged        orng   none
-" DiffText           orng   none
+" DiffText           none   orng
 " Include            orng   none
 " Macro              orng   none
 " PreCondit          orng   none
@@ -311,7 +311,7 @@ finish
 " Question           orng   none
 " SpellCap           none   none   undercurl s=orng
 " Conditional        gren   none
-" DiffAdd            gren   none
+" DiffAdd            none   gren
 " DiffAdded          gren   none
 " Exception          gren   none
 " Keyword            gren   none
@@ -360,8 +360,10 @@ finish
 " Color:      pink #b77c82 ~
 " Bold               none   none   bold
 " Conceal            none   none
+" DiffChange         none   none
 " Directory          none   none   bold
 " EndOfBuffer        gry3   none
+" FoldColumn         gry3   none
 " Ignore             gry3   none
 " Italic             gry3   none   italic
 " NonText            gry3   none
@@ -371,7 +373,6 @@ finish
 " Underlined         none   none   underline
 " Comment            gry2   none
 " CursorLineNr       gry2   none
-" DiffChange         gry2   none
 " LineNr             gry2   none
 " Cursor             gry0   gry3
 " PmenuSel           gry0   gry3
@@ -379,7 +380,6 @@ finish
 " StatusLineTerm     gry0   gry3
 " TabLineSel         gry0   gry3
 " ToolbarButton      gry0   gry3
-" FoldColumn         gry0   gry2
 " IncSearch          gry0   gry2
 " TermCursor         gry0   gry2
 " TermCursorNC       gry0   gry2
@@ -396,12 +396,12 @@ finish
 " StatusLineNC       gry3   gry1
 " StatusLineTermNC   gry3   gry1
 " TabLine            gry3   gry1
-" TabLineFill        gry3   gry1
 " WildMenu           gry3   gry1
 " PmenuSbar          gry1   gry1
 " PmenuThumb         gry2   gry2
+" TabLineFill        gry1   gry1
 " ToolbarLine        gry3   gry3
-" DiffDelete         red_   none
+" DiffDelete         none   red_
 " DiffRemoved        red_   none
 " Error              red_   none
 " ErrorMsg           red_   none
@@ -410,7 +410,7 @@ finish
 " WarningMsg         red_   none
 " Define             orng   none
 " DiffChanged        orng   none
-" DiffText           orng   none
+" DiffText           none   orng
 " Include            orng   none
 " Macro              orng   none
 " PreCondit          orng   none
@@ -418,7 +418,7 @@ finish
 " Question           orng   none
 " SpellCap           none   none   undercurl s=orng
 " Conditional        gren   none
-" DiffAdd            gren   none
+" DiffAdd            none   gren
 " DiffAdded          gren   none
 " Exception          gren   none
 " Keyword            gren   none
