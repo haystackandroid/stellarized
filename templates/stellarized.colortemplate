@@ -1,0 +1,44 @@
+# general
+Author:          nightsense
+Maintainer:      nightsense
+License:         MIT
+Full name:       stellarized
+Short name:      stellarized
+Terminal Colors: 256
+
+# light
+Background: light
+Color:      gry0 #fcf1e4 ~
+Color:      gry1 #e4dacc ~
+Color:      gry2 #80818f ~
+Color:      gry3 #616170 ~
+Color:      gry4 #282835 ~
+Color:      red_ #ea5a44 ~
+Color:      orng #d07018 ~
+Color:      yllw #fcbf00 ~
+Color:      gren #4d991b ~
+Color:      aqua #00a084 ~
+Color:      blue #008beb ~
+Color:      prpl #aa67c8 ~
+Color:      pink #e16177 ~
+Include:    _common.colortemplate
+MatchParen  gry4 yllw
+Search      gry4 yllw
+
+# dark
+Background: dark
+Color:      gry0 #282835 ~
+Color:      gry1 #3a3b47 ~
+Color:      gry2 #8a8074 ~
+Color:      gry3 #aba194 ~
+Color:      red_ #c87361 ~
+Color:      orng #b87c4e ~
+Color:      yllw #cfaa54 ~
+Color:      gren #6d9353 ~
+Color:      aqua #2b9685 ~
+Color:      blue #5f87b7 ~
+Color:      prpl #9776a4 ~
+Color:      pink #b77c82 ~
+Include:    _common.colortemplate
+MatchParen  gry0 yllw
+Search      gry0 yllw
