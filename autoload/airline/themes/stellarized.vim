@@ -3,7 +3,6 @@ let g:airline#themes#stellarized#palette = {}
 if &background ==# 'light'
   let s:gry0 = [ '#fcf1e4', 235 ]
   let s:gry1 = [ '#e4dacc', 237 ]
-  let s:gry2 = [ '#80818f', 244 ]
   let s:gry3 = [ '#616170', 247 ]
   let s:red_ = [ '#ea5a44', 167 ]
   let s:orng = [ '#d07018', 137 ]
@@ -12,7 +11,6 @@ if &background ==# 'light'
 else
   let s:gry0 = [ '#282835', 255 ]
   let s:gry1 = [ '#3a3b47', 253 ]
-  let s:gry2 = [ '#8a8074', 244 ]
   let s:gry3 = [ '#aba194', 241 ]
   let s:red_ = [ '#c87361', 203 ]
   let s:orng = [ '#b87c4e', 166 ]
