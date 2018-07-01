@@ -1,19 +1,19 @@
 if lightline#colorscheme#background() ==# 'light'
   let s:gry0 = '#fcf1e4'
   let s:gry1 = '#e4dacc'
-  let s:gry3 = '#616170'
-  let s:red_ = '#ea5a44'
-  let s:orng = '#d07018'
-  let s:gren = '#4d991b'
-  let s:blue = '#008beb'
+  let s:gry3 = '#666775'
+  let s:red_ = '#da634d'
+  let s:orng = '#c47430'
+  let s:gren = '#5e9738'
+  let s:blue = '#448ed6'
 else
   let s:gry0 = '#282835'
   let s:gry1 = '#3a3b47'
   let s:gry3 = '#aba194'
-  let s:red_ = '#c87361'
-  let s:orng = '#b87c4e'
-  let s:gren = '#6d9353'
-  let s:blue = '#5f87b7'
+  let s:red_ = '#b57d70'
+  let s:orng = '#ab8264'
+  let s:gren = '#789265'
+  let s:blue = '#6d8cb5'
 endif
 
 let s:p = { 'normal' : {} , 'inactive': {} , 'insert'  : {} , 
