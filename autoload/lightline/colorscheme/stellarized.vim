@@ -43,5 +43,5 @@ let s:p.tabline.right   = [[ s:gry0, s:gry2 ]]
 let s:p.normal.error    = [[ s:red_, s:gry0 ]]
 let s:p.normal.warning  = [[ s:orng, s:gry0 ]]
 
-let g:lightline#colorscheme#snow#palette =
+let g:lightline#colorscheme#stellarized#palette =
   \ lightline#colorscheme#fill(s:p)
