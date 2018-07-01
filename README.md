@@ -1,7 +1,7 @@
 <table><tbody><tr><td align="center"><h1>stellarized<br>
 <a href='https://github.com/lifepillar/vim-colortemplate'><img src='https://img.shields.io/badge/made%20with-Colortemplate-00a0ff.svg' alt='a Vim theme made with Colortemplate' /></a>
 </h1>
-<img src="https://github.com/nightsense/stellarized-new/raw/master/images/header.jpg" />
+<img src="https://github.com/nightsense/stellarized/raw/master/images/header.jpg" />
 <h4>paint vim with the stars</h4>
 </td></tr></tbody></table>
 
@@ -9,10 +9,10 @@
 
 <table><tbody>
 <tr>
-<td align="center"><h6><img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized-new/raw/master/images/screenshot-light.png" height="325" /><br><br>
+<td align="center"><h6><img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" height="325" /><br><br>
 sunny day</h6>
 </td>
-<td align="center"><h6><img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized-new/raw/master/images/screenshot-dark.png" height="325" /><br><br>
+<td align="center"><h6><img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" height="325" /><br><br>
 starry night</h6>
 </td>
 </tr>
