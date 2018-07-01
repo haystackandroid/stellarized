@@ -8,11 +8,11 @@ Terminal Colors: 256
 
 # light
 Background: light
-Color:      gry0 #ebf4ff ~
-Color:      gry1 #d3dceb ~
-Color:      gry2 #7f8895 ~
-Color:      gry3 #606875 ~
-Color:      gry4 #222a35 ~
+Color:      gry0 #fcf1e4 ~
+Color:      gry1 #e4dacc ~
+Color:      gry2 #868695 ~
+Color:      gry3 #666775 ~
+Color:      gry4 #282835 ~
 Color:      red_ #da634d ~
 Color:      orng #c47430 ~
 Color:      yllw #f9c31f ~
@@ -27,10 +27,10 @@ Search      gry4 yllw
 
 # dark
 Background: dark
-Color:      gry0 #222a35 ~
-Color:      gry1 #343c48 ~
-Color:      gry2 #757d8a ~
-Color:      gry3 #9aa3b1 ~
+Color:      gry0 #282835 ~
+Color:      gry1 #3a3b47 ~
+Color:      gry2 #847b6f ~
+Color:      gry3 #aba194 ~
 Color:      red_ #b57d70 ~
 Color:      orng #ab8264 ~
 Color:      yllw #c5ab72 ~
