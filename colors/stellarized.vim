@@ -46,9 +46,9 @@ if &background ==# 'dark'
   hi Comment ctermfg=137 ctermbg=NONE guifg=#9b8c7a guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi CursorLineNr ctermfg=137 ctermbg=NONE guifg=#9b8c7a guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi LineNr ctermfg=137 ctermbg=NONE guifg=#9b8c7a guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi Cursor ctermfg=254 ctermbg=235 guifg=#f2e5d4 guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi IncSearch ctermfg=254 ctermbg=235 guifg=#f2e5d4 guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi TermCursor ctermfg=254 ctermbg=235 guifg=#f2e5d4 guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi Cursor ctermfg=180 ctermbg=235 guifg=#c0b19d guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi IncSearch ctermfg=180 ctermbg=235 guifg=#c0b19d guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi TermCursor ctermfg=180 ctermbg=235 guifg=#c0b19d guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi VertSplit ctermfg=137 ctermbg=235 guifg=#9b8c7a guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi Folded ctermfg=137 ctermbg=235 guifg=#9b8c7a guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi PmenuSel ctermfg=137 ctermbg=235 guifg=#9b8c7a guibg=#282835 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -153,9 +153,9 @@ hi Underlined ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=N
 hi Comment ctermfg=60 ctermbg=NONE guifg=#6a6b81 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=60 ctermbg=NONE guifg=#6a6b81 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi LineNr ctermfg=60 ctermbg=NONE guifg=#6a6b81 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Cursor ctermfg=237 ctermbg=230 guifg=#353646 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi IncSearch ctermfg=237 ctermbg=230 guifg=#353646 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi TermCursor ctermfg=237 ctermbg=230 guifg=#353646 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi Cursor ctermfg=60 ctermbg=230 guifg=#4c4d61 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi IncSearch ctermfg=60 ctermbg=230 guifg=#4c4d61 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi TermCursor ctermfg=60 ctermbg=230 guifg=#4c4d61 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi VertSplit ctermfg=60 ctermbg=230 guifg=#6a6b81 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Folded ctermfg=60 ctermbg=230 guifg=#6a6b81 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi PmenuSel ctermfg=60 ctermbg=230 guifg=#6a6b81 guibg=#fffce8 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -259,9 +259,9 @@ finish
 " Comment            gry2   none
 " CursorLineNr       gry2   none
 " LineNr             gry2   none
-" Cursor             gry4   gry0   reverse
-" IncSearch          gry4   gry0   reverse
-" TermCursor         gry4   gry0   reverse
+" Cursor             gry3   gry0   reverse
+" IncSearch          gry3   gry0   reverse
+" TermCursor         gry3   gry0   reverse
 " VertSplit          gry2   gry0   reverse
 " Folded             gry2   gry0   reverse
 " PmenuSel           gry2   gry0   reverse
@@ -363,9 +363,9 @@ finish
 " Comment            gry2   none
 " CursorLineNr       gry2   none
 " LineNr             gry2   none
-" Cursor             gry4   gry0   reverse
-" IncSearch          gry4   gry0   reverse
-" TermCursor         gry4   gry0   reverse
+" Cursor             gry3   gry0   reverse
+" IncSearch          gry3   gry0   reverse
+" TermCursor         gry3   gry0   reverse
 " VertSplit          gry2   gry0   reverse
 " Folded             gry2   gry0   reverse
 " PmenuSel           gry2   gry0   reverse
