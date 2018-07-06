@@ -98,13 +98,21 @@ let &t_EI = "\<Esc>[2 q"
 
 ## status line themes
 
-To activate the stellarized lightline theme, add to vimrc:
+stellarized comes with themes for airline and lightline. A separate theme is provided for each variant+background.
+
+For instance, to activate the dark airline theme:
 
 ```
-let g:lightline = { 'colorscheme': 'stellarized' }
+let g:airline_theme='stellarized_dark'
 ```
 
-The airline theme should work out of the box.
+For lightline:
+
+```
+let g:lightline = { 'colorscheme': 'stellarized_dark' }
+```
+
+`dark` can be replaced with `light`.
 
 ---
 
