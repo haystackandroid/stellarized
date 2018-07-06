@@ -100,8 +100,8 @@ hue_bas0 = 075.0
 hue_bas1 = 285.0
 hue_yllw = 090.0
 
-hexgry0_lt = tohex( 11.00/12.0*100.0 , 00.25/12.0*100.0 , hue_bas0 )
-hexgry1_lt = tohex( 10.25/12.0*100.0 , 00.25/12.0*100.0 , hue_bas0 )
+hexgry0_lt = tohex( 12.00/12.0*100.0 , 01.50/12.0*100.0 , hue_bas0 )
+hexgry1_lt = tohex( 11.00/12.0*100.0 , 01.25/12.0*100.0 , hue_bas0 )
 hexgry2_lt = tohex( 05.50/12.0*100.0 , 01.50/12.0*100.0 , hue_bas1 )
 hexgry3_lt = tohex( 04.00/12.0*100.0 , 01.50/12.0*100.0 , hue_bas1 )
 hexyllw_lt = tohex( 08.50/12.0*100.0 , 08.00/12.0*100.0 , hue_yllw )
