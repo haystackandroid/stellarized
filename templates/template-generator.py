@@ -13,6 +13,9 @@ def tohex(l,c,h):
   clamp = sRGBColor(rgb.clamped_rgb_r, rgb.clamped_rgb_g, rgb.clamped_rgb_b)
   return clamp.get_rgb_hex()
 
+def gold(e):
+  return 0.61803398875**e*100
+
 def print_airline(name,bg):
   print 'auxfile autoload/airline/themes/%s_%s.vim' % (name, bg)
   print 'let g:airline#themes#%s_%s#palette = {}' % (name, bg)
@@ -98,30 +101,31 @@ def print_lightline(name,bg):
 
 hue_bas0 = 075.0
 hue_bas1 = 285.0
-hue_yllw = 090.0
+hue_yllw = 082.5
 
-hexgry0_lt = tohex( 12.00/12.0*100.0 , 009.017 , hue_bas0 )
-hexgry1_lt = tohex( 11.00/12.0*100.0 , 009.017 , hue_bas0 )
-hexgry2_lt = tohex( 05.90/12.0*100.0 , 009.017 , hue_bas1 )
-hexgry3_lt = tohex( 04.70/12.0*100.0 , 009.017 , hue_bas1 )
-hexyllw_lt = tohex( 10.50/12.0*100.0 , 100.000 , hue_yllw )
+hexgry0_lt = tohex( gold(0.000) , gold(4.0) , hue_bas0 )
+hexgry1_lt = tohex( gold(0.125) , gold(4.0) , hue_bas0 )
+hexgry2_lt = tohex( gold(1.500) , gold(4.0) , hue_bas1 )
+hexgry3_lt = tohex( gold(2.125) , gold(4.0) , hue_bas1 )
+hexyllw_lt = tohex( gold(0.250) , gold(0.0) , hue_yllw )
+                               
+hexgry0_dk = tohex( gold(3.500) , gold(4.0) , hue_bas1 )
+hexgry1_dk = tohex( gold(3.000) , gold(4.0) , hue_bas1 )
+hexgry2_dk = tohex( gold(1.000) , gold(4.0) , hue_bas0 )
+hexgry3_dk = tohex( gold(0.625) , gold(4.0) , hue_bas0 )
+hexyllw_dk = tohex( gold(0.500) , gold(1.5) , hue_yllw )
 
-hexgry0_dk = tohex( 02.00/12.0*100.0 , 009.017 , hue_bas1 )
-hexgry1_dk = tohex( 02.75/12.0*100.0 , 009.017 , hue_bas1 )
-hexgry2_dk = tohex( 07.14/12.0*100.0 , 009.017 , hue_bas0 )
-hexgry3_dk = tohex( 08.50/12.0*100.0 , 009.017 , hue_bas0 )
-hexyllw_dk = tohex( 09.50/12.0*100.0 , 050.000 , hue_yllw )
-
-cro_lt = 61.803
-cro_dk = 23.607
+cro_lt = gold(0.875)
+cro_dk = gold(2.75)
+lum_dk = gold(0.75)
 
 if theme_name == 'stellarized':
-  hexred__lt = tohex( 05.97/12.0*100.0 , cro_lt , 040.0 )
-  hexgren_lt = tohex( 05.90/12.0*100.0 , cro_lt , 135.0 )
-  hexblue_lt = tohex( 05.48/12.0*100.0 , cro_lt , 255.0 )
-  hexred__dk = tohex( 07.16/12.0*100.0 , cro_dk , 040.3 )
-  hexgren_dk = tohex( 07.15/12.0*100.0 , cro_dk , 135.0 )
-  hexblue_dk = tohex( 07.09/12.0*100.0 , cro_dk , 255.0 )
+  hexred__lt = tohex( gold(1.500) , cro_lt , 037.5 )
+  hexgren_lt = tohex( gold(1.500) , cro_lt , 135.0 )
+  hexblue_lt = tohex( gold(1.750) , cro_lt , 255.0 )
+  hexred__dk = tohex( lum_dk , cro_dk , 037.5 )
+  hexgren_dk = tohex( lum_dk , cro_dk , 135.0 )
+  hexblue_dk = tohex( lum_dk , cro_dk , 255.0 )
 else:
   print 'invalid theme name'
   sys.exit()
