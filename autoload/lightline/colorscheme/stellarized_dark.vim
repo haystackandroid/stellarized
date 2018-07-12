@@ -1,5 +1,5 @@
 let s:gry0 = "#2c2c3a"
-let s:gry1 = "#353646"
+let s:gry1 = "#353645"
 let s:gry2 = "#8b7e6d"
 let s:gry3 = "#a49685"
 let s:gryy = "#2c2c3a"
