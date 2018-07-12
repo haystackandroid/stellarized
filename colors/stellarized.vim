@@ -49,12 +49,12 @@ if &background ==# 'dark'
   hi Cursor ctermfg=249 ctermbg=236 guifg=#c0b5a7 guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi IncSearch ctermfg=249 ctermbg=236 guifg=#c0b5a7 guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi TermCursor ctermfg=249 ctermbg=236 guifg=#c0b5a7 guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi StatusLine ctermfg=246 ctermbg=236 guifg=#a49685 guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi StatusLineTerm ctermfg=246 ctermbg=236 guifg=#a49685 guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi VertSplit ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi Folded ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi PmenuSel ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi SignColumn ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi StatusLine ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi StatusLineTerm ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi TabLineSel ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi TermCursorNC ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi Visual ctermfg=244 ctermbg=236 guifg=#8b7e6d guibg=#2c2c3a guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -157,12 +157,12 @@ hi LineNr ctermfg=103 ctermbg=NONE guifg=#85869b guibg=NONE guisp=NONE cterm=NON
 hi Cursor ctermfg=60 ctermbg=230 guifg=#585869 guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi IncSearch ctermfg=60 ctermbg=230 guifg=#585869 guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi TermCursor ctermfg=60 ctermbg=230 guifg=#585869 guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi StatusLine ctermfg=60 ctermbg=230 guifg=#68697c guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi StatusLineTerm ctermfg=60 ctermbg=230 guifg=#68697c guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi VertSplit ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Folded ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi PmenuSel ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi SignColumn ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi StatusLine ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi StatusLineTerm ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi TabLineSel ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi TermCursorNC ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Visual ctermfg=103 ctermbg=230 guifg=#85869b guibg=#fffdea guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -264,12 +264,12 @@ finish
 " Cursor             gryc   gry0   reverse
 " IncSearch          gryc   gry0   reverse
 " TermCursor         gryc   gry0   reverse
+" StatusLine         gry3   gry0   reverse
+" StatusLineTerm     gry3   gry0   reverse
 " VertSplit          gry2   gry0   reverse
 " Folded             gry2   gry0   reverse
 " PmenuSel           gry2   gry0   reverse
 " SignColumn         gry2   gry0   reverse
-" StatusLine         gry2   gry0   reverse
-" StatusLineTerm     gry2   gry0   reverse
 " TabLineSel         gry2   gry0   reverse
 " TermCursorNC       gry2   gry0   reverse
 " Visual             gry2   gry0   reverse
@@ -369,12 +369,12 @@ finish
 " Cursor             gryc   gry0   reverse
 " IncSearch          gryc   gry0   reverse
 " TermCursor         gryc   gry0   reverse
+" StatusLine         gry3   gry0   reverse
+" StatusLineTerm     gry3   gry0   reverse
 " VertSplit          gry2   gry0   reverse
 " Folded             gry2   gry0   reverse
 " PmenuSel           gry2   gry0   reverse
 " SignColumn         gry2   gry0   reverse
-" StatusLine         gry2   gry0   reverse
-" StatusLineTerm     gry2   gry0   reverse
 " TabLineSel         gry2   gry0   reverse
 " TermCursorNC       gry2   gry0   reverse
 " Visual             gry2   gry0   reverse

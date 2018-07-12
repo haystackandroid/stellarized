@@ -25,13 +25,15 @@ Cursor             gryc   gry0   reverse
 IncSearch          gryc   gry0   reverse
 TermCursor         gryc   gry0   reverse
 
+# reverse medium
+StatusLine         gry3   gry0   reverse
+StatusLineTerm     gry3   gry0   reverse
+
 # reverse soft
 VertSplit          gry2   gry0   reverse
 Folded             gry2   gry0   reverse
 PmenuSel           gry2   gry0   reverse
 SignColumn         gry2   gry0   reverse
-StatusLine         gry2   gry0   reverse
-StatusLineTerm     gry2   gry0   reverse
 TabLineSel         gry2   gry0   reverse
 TermCursorNC       gry2   gry0   reverse
 Visual             gry2   gry0   reverse
