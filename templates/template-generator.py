@@ -60,7 +60,7 @@ def print_lightline(name,bg):
   print 'let s:gry1 = "@guigry1"'
   print 'let s:gry2 = "@guigry2"'
   print 'let s:gry3 = "@guigry3"'
-  print 'let s:gry4 = "@guigry4"'
+  print 'let s:gryy = "@guigryy"'
   print 'let s:red_ = "@guired_"'
   print 'let s:yllw = "@guiyllw"'
   print 'let s:gren = "@guigren"'
@@ -91,7 +91,7 @@ def print_lightline(name,bg):
   print 'let s:p.tabline.right   = [[ s:gry0, s:gry2 ]]'
   print ''
   print 'let s:p.normal.error    = [[ s:red_, s:gry0 ]]'
-  print 'let s:p.normal.warning  = [[ s:yllw, s:gry4 ]]'
+  print 'let s:p.normal.warning  = [[ s:yllw, s:gryy ]]'
   print ''
   print 'let g:lightline#colorscheme#%s_%s#palette =' % (name, bg)
   print '  \ lightline#colorscheme#fill(s:p)'
@@ -103,29 +103,31 @@ hue_bas0 = 075.0
 hue_bas1 = 285.0
 hue_yllw = 082.5
 
-hexgry0_lt = tohex( gold(0.000) , gold(4.0) , hue_bas0 )
-hexgry1_lt = tohex( gold(0.125) , gold(4.0) , hue_bas0 )
-hexgry2_lt = tohex( gold(1.500) , gold(4.0) , hue_bas1 )
-hexgry3_lt = tohex( gold(2.125) , gold(4.0) , hue_bas1 )
-hexyllw_lt = tohex( gold(0.250) , gold(0.0) , hue_yllw )
-                               
-hexgry0_dk = tohex( gold(3.500) , gold(4.0) , hue_bas1 )
-hexgry1_dk = tohex( gold(3.000) , gold(4.0) , hue_bas1 )
-hexgry2_dk = tohex( gold(1.000) , gold(4.0) , hue_bas0 )
-hexgry3_dk = tohex( gold(0.625) , gold(4.0) , hue_bas0 )
-hexyllw_dk = tohex( gold(0.500) , gold(1.5) , hue_yllw )
+hexgry0_lt = tohex( gold(0.00) , gold(4.50) , hue_bas0 )
+hexgry1_lt = tohex( gold(0.13) , gold(4.50) , hue_bas0 )
+hexgry2_lt = tohex( gold(1.18) , gold(4.50) , hue_bas1 )
+hexgry3_lt = tohex( gold(1.65) , gold(4.50) , hue_bas1 )
+hexgryc_lt = tohex( gold(1.98) , gold(4.75) , hue_bas1 )
+hexyllw_lt = tohex( gold(0.25) , gold(0.00) , hue_yllw )
 
-cro_lt = gold(0.875)
-cro_dk = gold(2.75)
-lum_dk = gold(0.75)
+hexgry0_dk = tohex( gold(3.50) , gold(5.00) , hue_bas1 )
+hexgry1_dk = tohex( gold(3.05) , gold(4.75) , hue_bas1 )
+hexgry2_dk = tohex( gold(1.29) , gold(4.50) , hue_bas0 )
+hexgry3_dk = tohex( gold(0.96) , gold(4.50) , hue_bas0 )
+hexgryc_dk = tohex( gold(0.62) , gold(5.00) , hue_bas0 )
+hexyllw_dk = tohex( gold(0.50) , gold(1.50) , hue_yllw )
+
+cro_lt = gold(1.0)
+cro_dk = gold(3.0)
+lum_dk = gold(1.0)
 
 if theme_name == 'stellarized':
-  hexred__lt = tohex( gold(1.500) , cro_lt , 037.5 )
-  hexgren_lt = tohex( gold(1.500) , cro_lt , 135.0 )
-  hexblue_lt = tohex( gold(1.750) , cro_lt , 255.0 )
-  hexred__dk = tohex( lum_dk , cro_dk , 037.5 )
-  hexgren_dk = tohex( lum_dk , cro_dk , 135.0 )
-  hexblue_dk = tohex( lum_dk , cro_dk , 255.0 )
+  hexred__lt = tohex( gold(1.42) , cro_lt , 037.5 )
+  hexgren_lt = tohex( gold(1.45) , cro_lt , 135.0 )
+  hexblue_lt = tohex( gold(1.61) , cro_lt , 255.0 )
+  hexred__dk = tohex( lum_dk     , cro_dk , 037.5 )
+  hexgren_dk = tohex( lum_dk     , cro_dk , 135.0 )
+  hexblue_dk = tohex( lum_dk     , cro_dk , 255.0 )
 else:
   print 'invalid theme name'
   sys.exit()
@@ -148,16 +150,17 @@ print 'Color:      gry0 %s ~' % hexgry0_lt
 print 'Color:      gry1 %s ~' % hexgry1_lt
 print 'Color:      gry2 %s ~' % hexgry2_lt
 print 'Color:      gry3 %s ~' % hexgry3_lt
-print 'Color:      gry4 %s ~' % hexgry1_dk
+print 'Color:      gryc %s ~' % hexgryc_lt
+print 'Color:      gryy %s ~' % hexgry0_dk
 print 'Color:      yllw %s ~' % hexyllw_lt
 print 'Color:      red_ %s ~' % hexred__lt
 print 'Color:      gren %s ~' % hexgren_lt
 print 'Color:      blue %s ~' % hexblue_lt
 print 'Include:    _common.colortemplate'
-print 'DiffChanged yllw gry4 reverse'
-print 'DiffText    yllw gry4 reverse'
-print 'MatchParen  yllw gry4 reverse'
-print 'Search      yllw gry4 reverse'
+print 'DiffChanged yllw gryy reverse'
+print 'DiffText    yllw gryy reverse'
+print 'MatchParen  yllw gryy reverse'
+print 'Search      yllw gryy reverse'
 print ''
 print_airline(theme_name,'light')
 print_lightline(theme_name,'light')
@@ -171,7 +174,8 @@ print 'Color:      gry0 %s ~' % hexgry0_dk
 print 'Color:      gry1 %s ~' % hexgry1_dk
 print 'Color:      gry2 %s ~' % hexgry2_dk
 print 'Color:      gry3 %s ~' % hexgry3_dk
-print 'Color:      gry4 %s ~' % hexgry1_lt
+print 'Color:      gryc %s ~' % hexgryc_dk
+print 'Color:      gryy %s ~' % hexgry0_dk
 print 'Color:      yllw %s ~' % hexyllw_dk
 print 'Color:      red_ %s ~' % hexred__dk
 print 'Color:      gren %s ~' % hexgren_dk

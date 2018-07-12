@@ -1,7 +1,6 @@
 # regular fg/bg
 Bold               none   none   bold
 Conceal            none   none
-DiffChange         none   none
 Directory          none   none   bold
 EndOfBuffer        none   none
 FoldColumn         none   none
@@ -22,9 +21,9 @@ CursorLineNr       gry2   none
 LineNr             gry2   none
 
 # reverse hard
-Cursor             gry3   gry0   reverse
-IncSearch          gry3   gry0   reverse
-TermCursor         gry3   gry0   reverse
+Cursor             gryc   gry0   reverse
+IncSearch          gryc   gry0   reverse
+TermCursor         gryc   gry0   reverse
 
 # reverse soft
 VertSplit          gry2   gry0   reverse
@@ -36,18 +35,19 @@ StatusLineTerm     gry2   gry0   reverse
 TabLineSel         gry2   gry0   reverse
 TermCursorNC       gry2   gry0   reverse
 Visual             gry2   gry0   reverse
+VisualNOS          gry2   gry0   reverse
 
 # highlit background
 ColorColumn        none   gry1
 CursorColumn       none   gry1
 CursorLine         none   gry1
+DiffChange         none   gry1
 Pmenu              gry3   gry1
 QuickFixLine       none   gry1
 StatusLineNC       gry3   gry1
 StatusLineTermNC   gry3   gry1
 TabLine            gry3   gry1
 ToolbarButton      gry3   gry1   bold
-VisualNOS          none   gry1
 WildMenu           gry3   gry1
 
 # solid
