@@ -1,6 +1,4 @@
-<table><tbody><tr><td align="center"><h1>stellarized<br>
-<a href='https://github.com/lifepillar/vim-colortemplate'><img src='https://img.shields.io/badge/made%20with-Colortemplate-00a0ff.svg' alt='a Vim theme made with Colortemplate' /></a>
-</h1>
+<table><tbody><tr><td align="center"><h1>stellarized</h1>
 <img src="https://github.com/nightsense/stellarized/raw/master/images/header.jpg" />
 <h4>paint vim with the stars</h4>
 </td></tr></tbody></table>
@@ -116,5 +114,6 @@ let g:lightline = { 'colorscheme': 'stellarized_dark' }
 
 ---
 
-###### repo license: [MIT](https://opensource.org/licenses/MIT)
-###### header image credit: [ESO/S. Brunier (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg)
+###### ▸&nbsp;&nbsp;the stellarized colorscheme is generated with [Colortemplate](https://github.com/lifepillar/vim-colortemplate) and provided under the [MIT license](https://opensource.org/licenses/MIT)
+###### ▸&nbsp;&nbsp;text contrast meets the 4.5:1 [W3C standard](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html), except for peripheral text (e.g. comments) which meets the 3:1 ISO standard
+###### image credit: night sky photo by [ESO/S. Brunier (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg)
