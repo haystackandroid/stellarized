@@ -103,29 +103,29 @@ hue_bas0 = 075.0
 hue_bas1 = 285.0
 hue_yllw = 082.5
 
-hexgry0_lt = tohex( gold(0.00) , gold(4.50)  , hue_bas0 )
-hexgry1_lt = tohex( gold(0.12) , gold(4.50)  , hue_bas0 )
-hexgry2_lt = tohex( gold(1.04) , gold(4.00)  , hue_bas1 )
-hexgry3_lt = tohex( gold(1.48) , gold(4.00)  , hue_bas1 )
-hexgryc_lt = tohex( gold(1.85) , gold(4.00)  , hue_bas1 )
-hexyllw_lt = tohex( gold(0.25) , gold(0.375) , hue_yllw )
+hexgry0_lt = tohex( gold(0.00) , gold(4.50) , hue_bas0 )
+hexgry1_lt = tohex( gold(0.12) , gold(4.50) , hue_bas0 )
+hexgry2_lt = tohex( gold(1.04) , gold(4.00) , hue_bas1 )
+hexgry3_lt = tohex( gold(1.48) , gold(4.00) , hue_bas1 )
+hexgryc_lt = tohex( gold(1.85) , gold(4.00) , hue_bas1 )
+hexyllw_lt = tohex( gold(0.25) , gold(0.50) , hue_yllw )
 
-hexgry0_dk = tohex( gold(3.60) , gold(4.50)  , hue_bas1 )
-hexgry1_dk = tohex( gold(3.20) , gold(4.25)  , hue_bas1 )
-hexgry2_dk = tohex( gold(1.48) , gold(4.00)  , hue_bas0 )
-hexgry3_dk = tohex( gold(1.04) , gold(4.00)  , hue_bas0 )
-hexgryc_dk = tohex( gold(0.76) , gold(4.00)  , hue_bas0 )
-hexyllw_dk = tohex( gold(0.50) , gold(1.500) , hue_yllw )
+hexgry0_dk = tohex( gold(3.60) , gold(4.50) , hue_bas1 )
+hexgry1_dk = tohex( gold(3.20) , gold(4.25) , hue_bas1 )
+hexgry2_dk = tohex( gold(1.48) , gold(4.00) , hue_bas0 )
+hexgry3_dk = tohex( gold(1.04) , gold(4.00) , hue_bas0 )
+hexgryc_dk = tohex( gold(0.76) , gold(4.00) , hue_bas0 )
+hexyllw_dk = tohex( gold(0.50) , gold(1.50) , hue_yllw )
 
-cro_lt = gold(0.5)
-cro_dk = gold(2.0)
+cro_lt = gold(1.0)
+cro_dk = gold(2.5)
 
 if theme_name == 'stellarized':
-  hexred__lt = tohex( gold(1.44) , cro_lt , 030.0 )
-  hexgren_lt = tohex( gold(1.50) , cro_lt , 135.0 )
-  hexblue_lt = tohex( gold(1.79) , cro_lt , 255.0 )
+  hexred__lt = tohex( gold(1.46) , cro_lt , 030.0 )
+  hexgren_lt = tohex( gold(1.48) , cro_lt , 135.0 )
+  hexblue_lt = tohex( gold(1.64) , cro_lt , 255.0 )
   hexred__dk = tohex( gold(1.03) , cro_dk , 030.0 )
-  hexgren_dk = tohex( gold(1.04) , cro_dk , 135.0 )
+  hexgren_dk = tohex( gold(1.05) , cro_dk , 135.0 )
   hexblue_dk = tohex( gold(1.06) , cro_dk , 255.0 )
 else:
   print 'invalid theme name'
