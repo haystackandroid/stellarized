@@ -1,17 +1,17 @@
 let g:airline#themes#stellarized_light#palette = {}
 
-let s:gry0 = [ "#fffdea", 230 ]
-let s:gry1 = [ "#fbecda", 255 ]
-let s:gry2 = [ "#9091ab", 103 ]
-let s:gry3 = [ "#72738c", 60 ]
-let s:red_ = [ "#cb4645", 167 ]
-let s:gren = [ "#26861f", 28 ]
-let s:blue = [ "#0077d0", 32 ]
+let s:gry0 = [ "#ffeed6", 223 ]
+let s:gry1 = [ "#f3e0c9", 223 ]
+let s:gry2 = [ "#7e7f99", 103 ]
+let s:gry3 = [ "#5b5d75", 60 ]
+let s:red_ = [ "#c04c48", 131 ]
+let s:gren = [ "#3f8234", 28 ]
+let s:cyan = [ "#008787", 30 ]
 
 let s:nrm1 = [ s:gry0[0] , s:gry3[0] , s:gry0[1] , s:gry3[1] ]
 let s:nrm2 = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 let s:insr = [ s:gry0[0] , s:gren[0] , s:gry0[1] , s:gren[1] ]
-let s:visl = [ s:gry0[0] , s:blue[0] , s:gry0[1] , s:blue[1] ]
+let s:visl = [ s:gry0[0] , s:cyan[0] , s:gry0[1] , s:cyan[1] ]
 let s:rplc = [ s:gry0[0] , s:red_[0] , s:gry0[1] , s:red_[1] ]
 let s:inac = [ s:gry2[0] , s:gry1[0] , s:gry2[1] , s:gry1[1] ]
 
