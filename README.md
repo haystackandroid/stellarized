@@ -7,10 +7,10 @@
 
 <table><tbody>
 <tr>
-<td align="center"><h6><img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" height="325" /><br><br>
+<td align="center"><h6><img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" height="175" /><br><br>
 sunny day</h6>
 </td>
-<td align="center"><h6><img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" height="325" /><br><br>
+<td align="center"><h6><img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" height="175" /><br><br>
 starry night</h6>
 </td>
 </tr>
