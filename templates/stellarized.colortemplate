@@ -8,7 +8,7 @@ Terminal Colors: 256
 
 Background: light
 Color:      gry0 #fcf0e1 ~
-Color:      gry1 #ecdfce ~
+Color:      gry1 #ede0d0 ~
 Color:      gry2 #7d7e92 ~
 Color:      gry3 #4a4b5e ~
 Color:      gryc #333443 ~
@@ -102,11 +102,11 @@ let g:lightline#colorscheme#stellarized_light#palette =
 endauxfile
 
 Background: dark
-Color:      gry0 #2a2b38 ~
+Color:      gry0 #2a2a38 ~
 Color:      gry1 #333443 ~
 Color:      gry2 #8a7d6c ~
-Color:      gry3 #cabcaa ~
-Color:      gryc #ecdfce ~
+Color:      gry3 #c9bba9 ~
+Color:      gryc #ede0d0 ~
 Color:      sprd #ff5255 ~
 Color:      spbl #00a0ff ~
 Color:      spcy #00b4b7 ~

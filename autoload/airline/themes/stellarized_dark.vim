@@ -1,8 +1,8 @@
 let g:airline#themes#stellarized_dark#palette = {}
 
-let s:gry0 = [ "#2a2b38", 236 ]
+let s:gry0 = [ "#2a2a38", 236 ]
 let s:gry1 = [ "#333443", 237 ]
-let s:gry3 = [ "#cabcaa", 250 ]
+let s:gry3 = [ "#c9bba9", 250 ]
 let s:red_ = [ "#d78b83", 174 ]
 let s:gren = [ "#86a97d", 108 ]
 let s:blue = [ "#82a3ce", 110 ]
