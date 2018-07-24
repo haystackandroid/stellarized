@@ -68,7 +68,49 @@ colorscheme stellarized
 set background=dark
 ```
 
-If you'd like the background to switch automatically at sunrise/set (or any other time), consider trying [night-and-day](https://github.com/nightsense/night-and-day).
+To set the background automatically based on the time at which vim is launched:
+
+```
+colorscheme stellarized
+if strftime('%H') >= 7 && strftime('%H') < 19
+  set background=light
+else
+  set background=dark
+endif
+```
+
+...which activates the light version of stellarized during the day (7AM-7PM), dark version at night.
+
+> The [night-and-day](https://github.com/nightsense/night-and-day) plugin can switch themes and/or backgrounds automatically, using absolute or sun-relative time.
+
+## status line themes
+
+stellarized comes with light and dark themes for airline and lightline.
+
+For instance, to activate the airline theme with dark background:
+
+```
+let g:airline_theme='stellarized_dark'
+```
+
+Or the lightline theme with light background:
+
+```
+let g:lightline = { 'colorscheme': 'stellarized_light' }
+```
+
+Status line themes can be added to the time-based snippet above:
+
+```
+colorscheme stellarized
+if strftime('%H') >= 7 && strftime('%H') < 19
+  set background=light
+  let g:lightline = { 'colorscheme': 'stellarized_light' }
+else
+  set background=dark
+  let g:lightline = { 'colorscheme': 'stellarized_dark' }
+endif
+```
 
 ## terminal vim
 
@@ -94,26 +136,8 @@ let &t_EI = "\<Esc>[2 q"
 
 ...which sets the cursor to a vertical line for insert mode, underline for replace mode, and block for normal mode.
 
-## status line themes
-
-stellarized comes with themes for airline and lightline. A separate theme is provided for each variant+background.
-
-For instance, to activate the dark airline theme:
-
-```
-let g:airline_theme='stellarized_dark'
-```
-
-For lightline:
-
-```
-let g:lightline = { 'colorscheme': 'stellarized_dark' }
-```
-
-`dark` can be replaced with `light`.
-
 ---
 
-###### ■&nbsp;&nbsp;the stellarized colorscheme is generated with [Colortemplate](https://github.com/lifepillar/vim-colortemplate) and provided under the [MIT license](https://opensource.org/licenses/MIT)
-###### ■&nbsp;&nbsp;text contrast meets the 4.5:1 [W3C standard](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html), except for peripheral text (e.g. comments) which meets the 3:1 ISO standard
-###### ■&nbsp;&nbsp;night sky photo by [ESO/S. Brunier (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg)
+###### released under the [MIT license](https://opensource.org/licenses/MIT)
+###### generated with [Colortemplate](https://github.com/lifepillar/vim-colortemplate)
+###### night sky photo by [ESO/S. Brunier (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg)
