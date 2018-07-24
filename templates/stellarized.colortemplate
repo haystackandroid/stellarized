@@ -7,11 +7,11 @@ Short name:      stellarized
 Terminal Colors: 256
 
 Background: light
-Color:      gry0 #feefdc ~
-Color:      gry1 #eddfcc ~
+Color:      gry0 #fcf0e1 ~
+Color:      gry1 #ecdfce ~
 Color:      gry2 #7d7e92 ~
 Color:      gry3 #4a4b5e ~
-Color:      gryc #323445 ~
+Color:      gryc #333443 ~
 Color:      srch #e5bc5a ~
 Color:      sprd #f20028 ~
 Color:      spbl #0082ff ~
@@ -102,11 +102,11 @@ let g:lightline#colorscheme#stellarized_light#palette =
 endauxfile
 
 Background: dark
-Color:      gry0 #292a3b ~
-Color:      gry1 #323445 ~
+Color:      gry0 #2a2b38 ~
+Color:      gry1 #333443 ~
 Color:      gry2 #8a7d6c ~
 Color:      gry3 #cabcaa ~
-Color:      gryc #eddfcc ~
+Color:      gryc #ecdfce ~
 Color:      sprd #ff5255 ~
 Color:      spbl #00a0ff ~
 Color:      spcy #00b4b7 ~
