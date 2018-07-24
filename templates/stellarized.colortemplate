@@ -7,17 +7,23 @@ Short name:      stellarized
 Terminal Colors: 256
 
 Background: light
-Color:      gry0 #ffeed6 ~
-Color:      gry1 #f3e0c9 ~
-Color:      gry2 #7e7f99 ~
-Color:      gry3 #5b5d75 ~
-Color:      gryc #33344b ~
-Color:      red_ #c04c48 ~
-Color:      gold #a07d19 ~
-Color:      gren #3f8234 ~
-Color:      cyan #008787 ~
-Color:      blue #0779c5 ~
-Color:      mgnt #a8559e ~
+Color:      gry0 #feefdc ~
+Color:      gry1 #eddfcc ~
+Color:      gry2 #7d7e92 ~
+Color:      gry3 #4a4b5e ~
+Color:      gryc #323445 ~
+Color:      srch #e5bc5a ~
+Color:      sprd #f20028 ~
+Color:      spbl #0082ff ~
+Color:      spcy #00949d ~
+Color:      spmg #d800cb ~
+Color:      prnt #007ecf ~
+Color:      red_ #c84c49 ~
+Color:      gold #9d7904 ~
+Color:      gren #3e8633 ~
+Color:      cyan #008a8a ~
+Color:      blue #007ecf ~
+Color:      mgnt #af56a4 ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_light.vim
@@ -25,18 +31,17 @@ let g:airline#themes#stellarized_light#palette = {}
 
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
-let s:gry2 = [ "@guigry2", @termgry2 ]
 let s:gry3 = [ "@guigry3", @termgry3 ]
 let s:red_ = [ "@guired_", @termred_ ]
 let s:gren = [ "@guigren", @termgren ]
-let s:cyan = [ "@guicyan", @termcyan ]
+let s:blue = [ "@guiblue", @termblue ]
 
 let s:nrm1 = [ s:gry0[0] , s:gry3[0] , s:gry0[1] , s:gry3[1] ]
 let s:nrm2 = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 let s:insr = [ s:gry0[0] , s:gren[0] , s:gry0[1] , s:gren[1] ]
-let s:visl = [ s:gry0[0] , s:cyan[0] , s:gry0[1] , s:cyan[1] ]
+let s:visl = [ s:gry0[0] , s:blue[0] , s:gry0[1] , s:blue[1] ]
 let s:rplc = [ s:gry0[0] , s:red_[0] , s:gry0[1] , s:red_[1] ]
-let s:inac = [ s:gry2[0] , s:gry1[0] , s:gry2[1] , s:gry1[1] ]
+let s:inac = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 
 let g:airline#themes#stellarized_light#palette.normal =
   \ airline#themes#generate_color_map( s:nrm1 , s:nrm2 , s:nrm2 )
@@ -59,12 +64,11 @@ endauxfile
 auxfile autoload/lightline/colorscheme/stellarized_light.vim
 let s:gry0 = "@guigry0"
 let s:gry1 = "@guigry1"
-let s:gry2 = "@guigry2"
 let s:gry3 = "@guigry3"
 let s:red_ = "@guired_"
-let s:gold = "@guigold"
+let s:mgnt = "@guimgnt"
 let s:gren = "@guigren"
-let s:cyan = "@guicyan"
+let s:blue = "@guiblue"
 
 let s:p = { "normal" : {} , "inactive": {} , "insert"  : {} ,
           \ "replace": {} , "visual"  : {} , "tabline" : {} }
@@ -80,35 +84,41 @@ let s:p.inactive.right  = copy(s:p.normal.middle)
 let s:p.insert.left     = [[ s:gry0, s:gren ]]
 let s:p.insert.right    = [[ s:gry0, s:gren ], [ s:gry0, s:gren ]]
 
-let s:p.visual.left     = [[ s:gry0, s:cyan ]]
-let s:p.visual.right    = [[ s:gry0, s:cyan ], [ s:gry0, s:cyan ]]
+let s:p.visual.left     = [[ s:gry0, s:blue ]]
+let s:p.visual.right    = [[ s:gry0, s:blue ], [ s:gry0, s:blue ]]
 
 let s:p.replace.left    = [[ s:gry0, s:red_ ]]
 let s:p.replace.right   = [[ s:gry0, s:red_ ], [ s:gry0, s:red_ ]]
 
-let s:p.tabline.left    = [[ s:gry0, s:gry3 ]]
-let s:p.tabline.tabsel  = copy(s:p.normal.middle)
-let s:p.tabline.right   = [[ s:gry0, s:gry3 ]]
+let s:p.tabline.left    = copy(s:p.normal.middle)
+let s:p.tabline.tabsel  = [[ s:gry0, s:gren ]]
+let s:p.tabline.right   = copy(s:p.normal.middle)
 
 let s:p.normal.error    = [[ s:red_, s:gry0 ]]
-let s:p.normal.warning  = [[ s:gold, s:gry0 ]]
+let s:p.normal.warning  = [[ s:mgnt, s:gry0 ]]
 
 let g:lightline#colorscheme#stellarized_light#palette =
   \ lightline#colorscheme#fill(s:p)
 endauxfile
 
 Background: dark
-Color:      gry0 #2b2d42 ~
-Color:      gry1 #33344b ~
-Color:      gry2 #8e7e68 ~
-Color:      gry3 #b7a68f ~
-Color:      gryc #f3e0c9 ~
-Color:      red_ #c6837c ~
-Color:      gold #b8a06d ~
-Color:      gren #7f9d77 ~
-Color:      cyan #5da19f ~
-Color:      blue #7c98bf ~
-Color:      mgnt #b289ab ~
+Color:      gry0 #292a3b ~
+Color:      gry1 #323445 ~
+Color:      gry2 #8a7d6c ~
+Color:      gry3 #cabcaa ~
+Color:      gryc #eddfcc ~
+Color:      sprd #ff5255 ~
+Color:      spbl #00a0ff ~
+Color:      spcy #00b4b7 ~
+Color:      spmg #ec59dd ~
+Color:      srch #6b70a5 ~
+Color:      prnt #6faaa8 ~
+Color:      red_ #d78b83 ~
+Color:      gold #ceb278 ~
+Color:      gren #86a97d ~
+Color:      cyan #6faaa8 ~
+Color:      blue #82a3ce ~
+Color:      mgnt #c091b8 ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_dark.vim
@@ -116,18 +126,17 @@ let g:airline#themes#stellarized_dark#palette = {}
 
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
-let s:gry2 = [ "@guigry2", @termgry2 ]
 let s:gry3 = [ "@guigry3", @termgry3 ]
 let s:red_ = [ "@guired_", @termred_ ]
 let s:gren = [ "@guigren", @termgren ]
-let s:cyan = [ "@guicyan", @termcyan ]
+let s:blue = [ "@guiblue", @termblue ]
 
 let s:nrm1 = [ s:gry0[0] , s:gry3[0] , s:gry0[1] , s:gry3[1] ]
 let s:nrm2 = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 let s:insr = [ s:gry0[0] , s:gren[0] , s:gry0[1] , s:gren[1] ]
-let s:visl = [ s:gry0[0] , s:cyan[0] , s:gry0[1] , s:cyan[1] ]
+let s:visl = [ s:gry0[0] , s:blue[0] , s:gry0[1] , s:blue[1] ]
 let s:rplc = [ s:gry0[0] , s:red_[0] , s:gry0[1] , s:red_[1] ]
-let s:inac = [ s:gry2[0] , s:gry1[0] , s:gry2[1] , s:gry1[1] ]
+let s:inac = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 
 let g:airline#themes#stellarized_dark#palette.normal =
   \ airline#themes#generate_color_map( s:nrm1 , s:nrm2 , s:nrm2 )
@@ -150,12 +159,11 @@ endauxfile
 auxfile autoload/lightline/colorscheme/stellarized_dark.vim
 let s:gry0 = "@guigry0"
 let s:gry1 = "@guigry1"
-let s:gry2 = "@guigry2"
 let s:gry3 = "@guigry3"
 let s:red_ = "@guired_"
-let s:gold = "@guigold"
+let s:mgnt = "@guimgnt"
 let s:gren = "@guigren"
-let s:cyan = "@guicyan"
+let s:blue = "@guiblue"
 
 let s:p = { "normal" : {} , "inactive": {} , "insert"  : {} ,
           \ "replace": {} , "visual"  : {} , "tabline" : {} }
@@ -171,18 +179,18 @@ let s:p.inactive.right  = copy(s:p.normal.middle)
 let s:p.insert.left     = [[ s:gry0, s:gren ]]
 let s:p.insert.right    = [[ s:gry0, s:gren ], [ s:gry0, s:gren ]]
 
-let s:p.visual.left     = [[ s:gry0, s:cyan ]]
-let s:p.visual.right    = [[ s:gry0, s:cyan ], [ s:gry0, s:cyan ]]
+let s:p.visual.left     = [[ s:gry0, s:blue ]]
+let s:p.visual.right    = [[ s:gry0, s:blue ], [ s:gry0, s:blue ]]
 
 let s:p.replace.left    = [[ s:gry0, s:red_ ]]
 let s:p.replace.right   = [[ s:gry0, s:red_ ], [ s:gry0, s:red_ ]]
 
-let s:p.tabline.left    = [[ s:gry0, s:gry3 ]]
-let s:p.tabline.tabsel  = copy(s:p.normal.middle)
-let s:p.tabline.right   = [[ s:gry0, s:gry3 ]]
+let s:p.tabline.left    = copy(s:p.normal.middle)
+let s:p.tabline.tabsel  = [[ s:gry0, s:gren ]]
+let s:p.tabline.right   = copy(s:p.normal.middle)
 
 let s:p.normal.error    = [[ s:red_, s:gry0 ]]
-let s:p.normal.warning  = [[ s:gold, s:gry0 ]]
+let s:p.normal.warning  = [[ s:mgnt, s:gry0 ]]
 
 let g:lightline#colorscheme#stellarized_dark#palette =
   \ lightline#colorscheme#fill(s:p)
