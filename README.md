@@ -1,33 +1,37 @@
-<table><tbody><tr><td align="center"><h1>stellarized</h1>
+<table><tbody align="center">
+
+<tr><td colspan='2'><h1>stellarized</h1>
 <img src="https://github.com/nightsense/stellarized/raw/master/images/header.jpg" />
 <h4>paint vim with the stars</h4>
-</td></tr></tbody></table>
+</td></tr>
 
-## palette
+<tr></tr>
 
-<table><tbody>
 <tr>
-<td align="center"><h6><img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" height="175" /><br><br>
-sunny day</h6>
+<td>
+<br>
+<img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" height="175" />
+<br>
 </td>
-<td align="center"><h6><img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" height="175" /><br><br>
-starry night</h6>
+<td>
+<br>
+<img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" height="175" />
+<br>
 </td>
 </tr>
 
 <tr></tr>
 
-<tr><td align='center' colspan='2'>
+<tr><td colspan='2'>
 
-<h6>The <a href='http://ethanschoonover.com/solarized'>solarized theme</a>, inspired by reading a book under<br>a shady tree on a sunny day, features a base palette<br>of dark green-blue and bright orange-yellow.</h6>
+<h5>The <a href='http://ethanschoonover.com/solarized'>solarized theme</a>, inspired by reading a book under<br>a shady tree on a sunny day, features a base palette<br>of dark green-blue and bright orange-yellow.</h5>
 
-<h6>The stellarized theme takes this basic idea and shifts<br>the base hues to reflect the <a href='http://www.vendian.org/mncharity/dir3/starcolor/details.html'>colours of the stars</a>.
+<h5>The stellarized theme takes this basic idea and shifts<br>the base hues to reflect the <a href='http://www.vendian.org/mncharity/dir3/starcolor/details.html'>colours of the stars</a>.</h5>
 
-<h6>Specifically, dark base colors are shifted bluewise (to<br>the approximate "hot star hue"), while light base colors<br>are shifted orangewise (to the "cold star hue").</h6>
+<h5>Specifically, dark base colors are shifted bluewise (to<br>the approximate "hot star hue"), while light base colors<br>are shifted orangewise (to the "cold star hue").</h5>
 
-<h6>stellarized is a special adaptation of <a href='https://github.com/nightsense/snow'>snow</a>.</h6>
+<h5>stellarized is a special adaptation of <a href='https://github.com/nightsense/snow'>snow</a>.</h5>
 
-</h6>
 </td></tr>
 
 </tbody></table>
