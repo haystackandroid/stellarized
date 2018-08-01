@@ -87,8 +87,8 @@ def print_lightline(name,bg):
   print '  \ lightline#colorscheme#flatten(s:p)'
   print 'endauxfile'
 
-hue_bas0 = 075.0
-hue_bas1 = 285.0
+hue_bas0 = 067.5
+hue_bas1 = 277.5
 
 hue_red_ = 022.5
 hue_gold = 082.5
@@ -102,14 +102,14 @@ cro_ltacnt = gold(1.25)
 lum_dkacnt = gold(1.00)
 cro_dkacnt = gold(2.50)
 
-hexgry0_lt = tohex( gold(0.08) , gold(4.50) , hue_bas0 )
-hexgry1_lt = tohex( gold(0.22) , gold(4.50) , hue_bas0 )
-hexgry2_lt = tohex( gold(1.28) , gold(4.50) , hue_bas1 )
-hexgry3_lt = tohex( gold(1.97) , gold(4.50) , hue_bas1 )
+hexgry0_lt = tohex( gold(0.06) , gold(4.50) , hue_bas0 )
+hexgry1_lt = tohex( gold(0.20) , gold(4.50) , hue_bas0 )
+hexgry2_lt = tohex( gold(1.27) , gold(4.50) , hue_bas1 )
+hexgry3_lt = tohex( gold(1.94) , gold(4.50) , hue_bas1 )
 
 hexgry0_dk = tohex( gold(3.50) , gold(4.50) , hue_bas1 )
-hexgry1_dk = tohex( gold(3.06) , gold(4.50) , hue_bas1 )
-hexgry2_dk = tohex( gold(1.28) , gold(4.50) , hue_bas0 )
+hexgry1_dk = tohex( gold(3.05) , gold(4.50) , hue_bas1 )
+hexgry2_dk = tohex( gold(1.27) , gold(4.50) , hue_bas0 )
 hexgry3_dk = tohex( gold(0.73) , gold(4.50) , hue_bas0 )
 
 hexred__lt = tohex( lum_ltacnt , cro_ltacnt , hue_red_ )
