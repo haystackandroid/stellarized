@@ -10,12 +10,12 @@
 <tr>
 <td>
 <br>
-<img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" height="175" />
+<img alt="screenshot of the stellarized vim theme, light version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-light.png" width="422" />
 <br>
 </td>
 <td>
 <br>
-<img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" height="175" />
+<img alt="screenshot of the stellarized vim theme, dark version" src="https://github.com/nightsense/stellarized/raw/master/images/screenshot-dark.png" width="422" />
 <br>
 </td>
 </tr>
@@ -61,26 +61,26 @@ call plug#end()
 For a sunny day, add the following to vimrc:
 
 ```
-colorscheme stellarized
 set background=light
+colorscheme stellarized
 ```
 
 For a starry night:
 
 ```
-colorscheme stellarized
 set background=dark
+colorscheme stellarized
 ```
 
 To set the background automatically based on the time at which vim is launched:
 
 ```
-colorscheme stellarized
 if strftime('%H') >= 7 && strftime('%H') < 19
   set background=light
 else
   set background=dark
 endif
+colorscheme stellarized
 ```
 
 ...which activates the light version of stellarized during the day (7AM-7PM), dark version at night.
@@ -106,7 +106,6 @@ let g:lightline = { 'colorscheme': 'stellarized_light' }
 Status line themes can be added to the time-based snippet above:
 
 ```
-colorscheme stellarized
 if strftime('%H') >= 7 && strftime('%H') < 19
   set background=light
   let g:lightline = { 'colorscheme': 'stellarized_light' }
@@ -114,6 +113,7 @@ else
   set background=dark
   let g:lightline = { 'colorscheme': 'stellarized_dark' }
 endif
+colorscheme stellarized
 ```
 
 ## terminal vim

@@ -1,6 +1,5 @@
 from colormath.color_conversions import convert_color
 from colormath.color_objects import LCHabColor,sRGBColor
-import sys
 
 def tohex(l,c,h):
   rgb = convert_color(LCHabColor(l,c,h),sRGBColor)
@@ -49,13 +48,13 @@ def print_airline(name,bg):
 
 def print_lightline(name,bg):
   print 'auxfile autoload/lightline/colorscheme/%s_%s.vim' % (name, bg)
-  print 'let s:gry0 = "@guigry0"'
-  print 'let s:gry1 = "@guigry1"'
-  print 'let s:gry3 = "@guigry3"'
-  print 'let s:red_ = "@guired_"'
-  print 'let s:mgnt = "@guimgnt"'
-  print 'let s:gren = "@guigren"'
-  print 'let s:blue = "@guiblue"'
+  print 'let s:gry0 = [ "@guigry0", @termgry0 ]'
+  print 'let s:gry1 = [ "@guigry1", @termgry1 ]'
+  print 'let s:gry3 = [ "@guigry3", @termgry3 ]'
+  print 'let s:red_ = [ "@guired_", @termred_ ]'
+  print 'let s:mgnt = [ "@guimgnt", @termmgnt ]'
+  print 'let s:gren = [ "@guigren", @termgren ]'
+  print 'let s:blue = [ "@guiblue", @termblue ]'
   print ''
   print 'let s:p = { "normal" : {} , "inactive": {} , "insert"  : {} ,'
   print '          \ "replace": {} , "visual"  : {} , "tabline" : {} }'
@@ -85,50 +84,50 @@ def print_lightline(name,bg):
   print 'let s:p.normal.warning  = [[ s:mgnt, s:gry0 ]]'
   print ''
   print 'let g:lightline#colorscheme#%s_%s#palette =' % (name, bg)
-  print '  \ lightline#colorscheme#fill(s:p)'
+  print '  \ lightline#colorscheme#flatten(s:p)'
   print 'endauxfile'
 
 hue_bas0 = 075.0
 hue_bas1 = 285.0
-hue_yllw = 082.5
 
-hexgry0_lt = tohex( gold(0.10) , gold(5.00) , hue_bas0 )
-hexgry1_lt = tohex( gold(0.22) , gold(4.75) , hue_bas0 )
-hexgry2_lt = tohex( gold(1.31) , gold(4.50) , hue_bas1 )
-hexgry3_lt = tohex( gold(2.34) , gold(4.50) , hue_bas1 )
-hexsrch_lt = tohex( gold(0.50) , gold(1.25) , 082.5    )
+hue_red_ = 022.5
+hue_gold = 082.5
+hue_gren = 142.5
+hue_cyan = 202.5
+hue_blue = 262.5
+hue_mgnt = 322.5
 
-hexgry0_dk = tohex( gold(3.61) , gold(5.00) , hue_bas1 )
-hexgry1_dk = tohex( gold(3.15) , gold(4.75) , hue_bas1 )
-hexgry2_dk = tohex( gold(1.31) , gold(4.50) , hue_bas0 )
-hexgry3_dk = tohex( gold(0.55) , gold(4.50) , hue_bas0 )
-hexsrch_dk = tohex( gold(1.50) , gold(2.50) , 285.0    )
+lum_ltacnt = gold(1.50)
+cro_ltacnt = gold(1.25)
+lum_dkacnt = gold(1.00)
+cro_dkacnt = gold(2.50)
 
-hexsprd_lt = tohex( gold(1.50)  , gold(0.00) , 030.0    )
-hexspbl_lt = tohex( gold(1.50)  , gold(0.00) , 262.5    )
-hexspcy_lt = tohex( gold(1.50)  , gold(0.00) , 195.0    )
-hexspmg_lt = tohex( gold(1.50)  , gold(0.00) , 330.0    )
+hexgry0_lt = tohex( gold(0.08) , gold(4.50) , hue_bas0 )
+hexgry1_lt = tohex( gold(0.22) , gold(4.50) , hue_bas0 )
+hexgry2_lt = tohex( gold(1.28) , gold(4.50) , hue_bas1 )
+hexgry3_lt = tohex( gold(1.97) , gold(4.50) , hue_bas1 )
 
-hexsprd_dk = tohex( gold(1.00)  , gold(0.50) , 030.0    )
-hexspbl_dk = tohex( gold(1.00)  , gold(0.50) , 262.5    )
-hexspcy_dk = tohex( gold(1.00)  , gold(0.50) , 195.0    )
-hexspmg_dk = tohex( gold(1.00)  , gold(0.50) , 330.0    )
+hexgry0_dk = tohex( gold(3.50) , gold(4.50) , hue_bas1 )
+hexgry1_dk = tohex( gold(3.06) , gold(4.50) , hue_bas1 )
+hexgry2_dk = tohex( gold(1.28) , gold(4.50) , hue_bas0 )
+hexgry3_dk = tohex( gold(0.73) , gold(4.50) , hue_bas0 )
 
-hexred__lt = tohex( gold(1.438) , gold(1.125) , 030.0    )
-hexgold_lt = tohex( gold(1.312) , gold(1.125) , 082.5    )
-hexgren_lt = tohex( gold(1.438) , gold(1.375) , 135.0    )
-hexcyan_lt = tohex( gold(1.438) , gold(1.625) , 195.0    )
-hexblue_lt = tohex( gold(1.438) , gold(1.375) , 262.5    )
-hexmgnt_lt = tohex( gold(1.438) , gold(1.375) , 330.0    )
+hexred__lt = tohex( lum_ltacnt , cro_ltacnt , hue_red_ )
+hexgold_lt = tohex( lum_ltacnt , cro_ltacnt , hue_gold )
+hexgren_lt = tohex( lum_ltacnt , cro_ltacnt , hue_gren )
+hexcyan_lt = tohex( lum_ltacnt , cro_ltacnt , hue_cyan )
+hexblue_lt = tohex( lum_ltacnt , cro_ltacnt , hue_blue )
+hexmgnt_lt = tohex( lum_ltacnt , cro_ltacnt , hue_mgnt )
 
-hexred__dk = tohex( gold(0.875) , gold(2.25) , 030.0    )
-hexgold_dk = tohex( gold(0.625) , gold(2.25) , 082.5    )
-hexgren_dk = tohex( gold(0.875) , gold(2.75) , 135.0    )
-hexcyan_dk = tohex( gold(0.875) , gold(3.25) , 195.0    )
-hexblue_dk = tohex( gold(0.875) , gold(2.75) , 262.5    )
-hexmgnt_dk = tohex( gold(0.875) , gold(2.75) , 330.0    )
+hexred__dk = tohex( lum_dkacnt , cro_dkacnt , hue_red_ )
+hexgold_dk = tohex( lum_dkacnt , cro_dkacnt , hue_gold )
+hexgren_dk = tohex( lum_dkacnt , cro_dkacnt , hue_gren )
+hexcyan_dk = tohex( lum_dkacnt , cro_dkacnt , hue_cyan )
+hexblue_dk = tohex( lum_dkacnt , cro_dkacnt , hue_blue )
+hexmgnt_dk = tohex( lum_dkacnt , cro_dkacnt , hue_mgnt )
 
-print '# general'
+hexsrch_lt = tohex( gold(0.50) , gold(1.00) , hue_gold )
+
 print 'Author:          nightsense'
 print 'Maintainer:      nightsense'
 print 'License:         MIT'
@@ -137,46 +136,46 @@ print 'Short name:      stellarized'
 print 'Terminal Colors: 256'
 print ''
 print 'Background: light'
-print 'Color:      gry0 %s ~' % hexgry0_lt
-print 'Color:      gry1 %s ~' % hexgry1_lt
-print 'Color:      gry2 %s ~' % hexgry2_lt
-print 'Color:      gry3 %s ~' % hexgry3_lt
-print 'Color:      gryc %s ~' % hexgry1_dk
-print 'Color:      srch %s ~' % hexsrch_lt
-print 'Color:      sprd %s ~' % hexsprd_lt
-print 'Color:      spbl %s ~' % hexspbl_lt
-print 'Color:      spcy %s ~' % hexspcy_lt
-print 'Color:      spmg %s ~' % hexspmg_lt
-print 'Color:      prnt %s ~' % hexblue_lt
-print 'Color:      red_ %s ~' % hexred__lt
-print 'Color:      gold %s ~' % hexgold_lt
-print 'Color:      gren %s ~' % hexgren_lt
-print 'Color:      cyan %s ~' % hexcyan_lt
-print 'Color:      blue %s ~' % hexblue_lt
-print 'Color:      mgnt %s ~' % hexmgnt_lt
+print 'Color:      gry0 %s 255' % hexgry0_lt
+print 'Color:      gry1 %s 254' % hexgry1_lt
+print 'Color:      gry2 %s 244' % hexgry2_lt
+print 'Color:      gry3 %s 059' % hexgry3_lt
+print 'Color:      gryc %s 237' % hexgry1_dk
+print 'Color:      srch %s 178' % hexsrch_lt
+print 'Color:      grys %s 237' % hexgry1_dk
+print 'Color:      sprd %s 197' % '#ff005f'
+print 'Color:      spbl %s 033' % '#0087ff'
+print 'Color:      spcy %s 031' % '#0087af'
+print 'Color:      spmg %s 164' % '#d700d7'
+print 'Color:      red_ %s 131' % hexred__lt
+print 'Color:      gold %s 094' % hexgold_lt
+print 'Color:      gren %s 028' % hexgren_lt
+print 'Color:      cyan %s 030' % hexcyan_lt
+print 'Color:      blue %s 032' % hexblue_lt
+print 'Color:      mgnt %s 133' % hexmgnt_lt
 print 'Include:    _common.colortemplate'
 print ''
 print_airline('stellarized','light')
 print_lightline('stellarized','light')
 print ''
 print 'Background: dark'
-print 'Color:      gry0 %s ~' % hexgry0_dk
-print 'Color:      gry1 %s ~' % hexgry1_dk
-print 'Color:      gry2 %s ~' % hexgry2_dk
-print 'Color:      gry3 %s ~' % hexgry3_dk
-print 'Color:      gryc %s ~' % hexgry1_lt
-print 'Color:      sprd %s ~' % hexsprd_dk
-print 'Color:      spbl %s ~' % hexspbl_dk
-print 'Color:      spcy %s ~' % hexspcy_dk
-print 'Color:      spmg %s ~' % hexspmg_dk
-print 'Color:      srch %s ~' % hexsrch_dk
-print 'Color:      prnt %s ~' % hexcyan_dk
-print 'Color:      red_ %s ~' % hexred__dk
-print 'Color:      gold %s ~' % hexgold_dk
-print 'Color:      gren %s ~' % hexgren_dk
-print 'Color:      cyan %s ~' % hexcyan_dk
-print 'Color:      blue %s ~' % hexblue_dk
-print 'Color:      mgnt %s ~' % hexmgnt_dk
+print 'Color:      gry0 %s 236' % hexgry0_dk
+print 'Color:      gry1 %s 237' % hexgry1_dk
+print 'Color:      gry2 %s 244' % hexgry2_dk
+print 'Color:      gry3 %s 248' % hexgry3_dk
+print 'Color:      gryc %s 254' % hexgry1_lt
+print 'Color:      srch %s 137' % hexgold_dk
+print 'Color:      grys %s 236' % hexgry0_dk
+print 'Color:      sprd %s 197' % '#ff005f'
+print 'Color:      spbl %s 033' % '#0087ff'
+print 'Color:      spcy %s 031' % '#0087af'
+print 'Color:      spmg %s 164' % '#d700d7'
+print 'Color:      red_ %s 174' % hexred__dk
+print 'Color:      gold %s 137' % hexgold_dk
+print 'Color:      gren %s 108' % hexgren_dk
+print 'Color:      cyan %s 073' % hexcyan_dk
+print 'Color:      blue %s 110' % hexblue_dk
+print 'Color:      mgnt %s 139' % hexmgnt_dk
 print 'Include:    _common.colortemplate'
 print ''
 print_airline('stellarized','dark')
