@@ -3,9 +3,9 @@ let g:airline#themes#stellarized_light#palette = {}
 let s:gry0 = [ "#fff3e2", 255 ]
 let s:gry1 = [ "#f4e1d1", 254 ]
 let s:gry3 = [ "#585c6f", 59 ]
-let s:red_ = [ "#c34853", 131 ]
-let s:gren = [ "#1a8536", 28 ]
-let s:blue = [ "#007ad0", 32 ]
+let s:red_ = [ "#bc4f4b", 131 ]
+let s:gren = [ "#418136", 28 ]
+let s:blue = [ "#2079c1", 32 ]
 
 let s:nrm1 = [ s:gry0[0] , s:gry3[0] , s:gry0[1] , s:gry3[1] ]
 let s:nrm2 = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]

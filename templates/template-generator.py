@@ -90,17 +90,15 @@ def print_lightline(name,bg):
 hue_bas0 = 067.5
 hue_bas1 = 277.5
 
-hue_red_ = 022.5
+hue_red_ = 030.0
 hue_gold = 082.5
-hue_gren = 142.5
-hue_cyan = 202.5
+hue_gren = 135.0
+hue_cyan = 195.0
 hue_blue = 262.5
-hue_mgnt = 322.5
+hue_mgnt = 330.0
 
 lum_ltacnt = gold(1.50)
-cro_ltacnt = gold(1.25)
 lum_dkacnt = gold(1.00)
-cro_dkacnt = gold(2.50)
 
 hexgry0_lt = tohex( gold(0.06) , gold(4.50) , hue_bas0 )
 hexgry1_lt = tohex( gold(0.20) , gold(4.50) , hue_bas0 )
@@ -112,19 +110,19 @@ hexgry1_dk = tohex( gold(3.05) , gold(4.50) , hue_bas1 )
 hexgry2_dk = tohex( gold(1.27) , gold(4.50) , hue_bas0 )
 hexgry3_dk = tohex( gold(0.73) , gold(4.50) , hue_bas0 )
 
-hexred__lt = tohex( lum_ltacnt , cro_ltacnt , hue_red_ )
-hexgold_lt = tohex( lum_ltacnt , cro_ltacnt , hue_gold )
-hexgren_lt = tohex( lum_ltacnt , cro_ltacnt , hue_gren )
-hexcyan_lt = tohex( lum_ltacnt , cro_ltacnt , hue_cyan )
-hexblue_lt = tohex( lum_ltacnt , cro_ltacnt , hue_blue )
-hexmgnt_lt = tohex( lum_ltacnt , cro_ltacnt , hue_mgnt )
+hexred__lt = tohex( lum_ltacnt , gold(1.38) , hue_red_ )
+hexgold_lt = tohex( lum_ltacnt , gold(1.44) , hue_gold )
+hexgren_lt = tohex( lum_ltacnt , gold(1.56) , hue_gren )
+hexcyan_lt = tohex( lum_ltacnt , gold(1.50) , hue_cyan )
+hexblue_lt = tohex( lum_ltacnt , gold(1.62) , hue_blue )
+hexmgnt_lt = tohex( lum_ltacnt , gold(1.50) , hue_mgnt )
 
-hexred__dk = tohex( lum_dkacnt , cro_dkacnt , hue_red_ )
-hexgold_dk = tohex( lum_dkacnt , cro_dkacnt , hue_gold )
-hexgren_dk = tohex( lum_dkacnt , cro_dkacnt , hue_gren )
-hexcyan_dk = tohex( lum_dkacnt , cro_dkacnt , hue_cyan )
-hexblue_dk = tohex( lum_dkacnt , cro_dkacnt , hue_blue )
-hexmgnt_dk = tohex( lum_dkacnt , cro_dkacnt , hue_mgnt )
+hexred__dk = tohex( lum_dkacnt , gold(2.75) , hue_red_ )
+hexgold_dk = tohex( lum_dkacnt , gold(2.88) , hue_gold )
+hexgren_dk = tohex( lum_dkacnt , gold(3.12) , hue_gren )
+hexcyan_dk = tohex( lum_dkacnt , gold(3.00) , hue_cyan )
+hexblue_dk = tohex( lum_dkacnt , gold(3.25) , hue_blue )
+hexmgnt_dk = tohex( lum_dkacnt , gold(3.00) , hue_mgnt )
 
 hexsrch_lt = tohex( gold(0.50) , gold(1.00) , hue_gold )
 
