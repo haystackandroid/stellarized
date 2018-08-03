@@ -21,9 +21,9 @@ Color:      spmg #d700d7 164
 Color:      red_ #be4f3c ~
 Color:      gold #8e6e08 ~
 Color:      gren #4b8029 ~
-Color:      cyan #008888 ~
-Color:      blue #1779c3 ~
-Color:      mgnt #a8559e ~
+Color:      cyan #008989 ~
+Color:      blue #0779c5 ~
+Color:      mgnt #a9549f ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_light.vim
@@ -117,9 +117,9 @@ Color:      spmg #d787d7 139
 Color:      red_ #c78474 ~
 Color:      gold #a89263 ~
 Color:      gren #849d71 ~
-Color:      cyan #61a19f ~
-Color:      blue #7899c4 ~
-Color:      mgnt #b289ab ~
+Color:      cyan #5da19f ~
+Color:      blue #7599c7 ~
+Color:      mgnt #b388ac ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_dark.vim
