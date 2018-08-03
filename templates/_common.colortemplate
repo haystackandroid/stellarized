@@ -95,7 +95,7 @@ DiffChanged        gold   gry0   reverse
 DiffText           gold   gry0   reverse
 
 # reverse altered-gold search matches
-Search             srch   grys   reverse
+Search             srch   gryc   reverse
 
 # green statements
 Conditional        gren   none

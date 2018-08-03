@@ -141,7 +141,6 @@ print 'Color:      gry2 %s ~' % hexgry2_lt
 print 'Color:      gry3 %s ~' % hexgry3_lt
 print 'Color:      gryc %s ~' % hexgry1_dk
 print 'Color:      srch %s ~' % hexsrch_lt
-print 'Color:      grys %s ~' % hexgry1_dk
 print 'Color:      gryp %s ~' % hexgry3_dk
 print 'Color:      sprd %s 196' % '#ff0000'
 print 'Color:      spbl %s 033' % '#0087ff'
@@ -165,7 +164,6 @@ print 'Color:      gry2 %s ~' % hexgry2_dk
 print 'Color:      gry3 %s ~' % hexgry3_dk
 print 'Color:      gryc %s ~' % hexgry1_lt
 print 'Color:      srch %s ~' % hexsrch_dk
-print 'Color:      grys %s ~' % hexgry1_lt
 print 'Color:      gryp %s ~' % hexgry3_lt
 print 'Color:      sprd %s 203' % '#ff5f5f'
 print 'Color:      spbl %s 075' % '#5fafff'

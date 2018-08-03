@@ -213,7 +213,6 @@ finish
 " Color:      gry3 #585c6f ~
 " Color:      gryc #323748 ~
 " Color:      srch #e8bc4a ~
-" Color:      grys #323748 ~
 " Color:      gryp #baa999 ~
 " Color:      sprd #ff0000 196
 " Color:      spbl #0087ff 033
@@ -293,7 +292,7 @@ finish
 " Tag                gold   none
 " DiffChanged        gold   gry0   reverse
 " DiffText           gold   gry0   reverse
-" Search             srch   grys   reverse
+" Search             srch   gryc   reverse
 " Conditional        gren   none
 " Exception          gren   none
 " Keyword            gren   none
@@ -324,7 +323,6 @@ finish
 " Color:      gry3 #baa999 ~
 " Color:      gryc #f4e1d1 ~
 " Color:      srch #776333 ~
-" Color:      grys #f4e1d1 ~
 " Color:      gryp #585c6f ~
 " Color:      sprd #ff5f5f 203
 " Color:      spbl #5fafff 075
@@ -404,7 +402,7 @@ finish
 " Tag                gold   none
 " DiffChanged        gold   gry0   reverse
 " DiffText           gold   gry0   reverse
-" Search             srch   grys   reverse
+" Search             srch   gryc   reverse
 " Conditional        gren   none
 " Exception          gren   none
 " Keyword            gren   none
