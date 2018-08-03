@@ -42,6 +42,10 @@ def print_airline(name,bg):
   print 'let g:airline#themes#%s_%s#palette.inactive =' % (name, bg)
   print '  \ airline#themes#generate_color_map( s:inac , s:inac , s:inac )'
   print ''
+  print 'if !get(g:, "loaded_ctrlp", 0)'
+  print '  finish'
+  print 'endif'
+  print ''
   print 'let g:airline#themes#%s_%s#palette.ctrlp =' % (name, bg)
   print '  \ airline#extensions#ctrlp#generate_color_map( s:nrm2 , s:nrm1 , s:nrm2 )'
   print 'endauxfile'
@@ -155,6 +159,7 @@ print 'Color:      mgnt %s ~' % hexmgnt_lt
 print 'Include:    _common.colortemplate'
 print ''
 print_airline('stellarized','light')
+print ''
 print_lightline('stellarized','light')
 print ''
 print 'Background: dark'
@@ -178,4 +183,5 @@ print 'Color:      mgnt %s ~' % hexmgnt_dk
 print 'Include:    _common.colortemplate'
 print ''
 print_airline('stellarized','dark')
+print ''
 print_lightline('stellarized','dark')

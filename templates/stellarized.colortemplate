@@ -57,9 +57,14 @@ let g:airline#themes#stellarized_light#palette.replace =
 let g:airline#themes#stellarized_light#palette.inactive =
   \ airline#themes#generate_color_map( s:inac , s:inac , s:inac )
 
+if !get(g:, "loaded_ctrlp", 0)
+  finish
+endif
+
 let g:airline#themes#stellarized_light#palette.ctrlp =
   \ airline#extensions#ctrlp#generate_color_map( s:nrm2 , s:nrm1 , s:nrm2 )
 endauxfile
+
 auxfile autoload/lightline/colorscheme/stellarized_light.vim
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
@@ -152,9 +157,14 @@ let g:airline#themes#stellarized_dark#palette.replace =
 let g:airline#themes#stellarized_dark#palette.inactive =
   \ airline#themes#generate_color_map( s:inac , s:inac , s:inac )
 
+if !get(g:, "loaded_ctrlp", 0)
+  finish
+endif
+
 let g:airline#themes#stellarized_dark#palette.ctrlp =
   \ airline#extensions#ctrlp#generate_color_map( s:nrm2 , s:nrm1 , s:nrm2 )
 endauxfile
+
 auxfile autoload/lightline/colorscheme/stellarized_dark.vim
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]

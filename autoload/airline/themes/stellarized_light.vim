@@ -29,6 +29,10 @@ let g:airline#themes#stellarized_light#palette.replace =
 let g:airline#themes#stellarized_light#palette.inactive =
   \ airline#themes#generate_color_map( s:inac , s:inac , s:inac )
 
+if !get(g:, "loaded_ctrlp", 0)
+  finish
+endif
+
 let g:airline#themes#stellarized_light#palette.ctrlp =
   \ airline#extensions#ctrlp#generate_color_map( s:nrm2 , s:nrm1 , s:nrm2 )
 
