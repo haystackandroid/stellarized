@@ -18,8 +18,8 @@ Color:      sprd #ff0000 196
 Color:      spbl #0087ff 033
 Color:      spcy #008787 030
 Color:      spmg #d700d7 164
-Color:      red_ #bc503e ~
-Color:      gold #8e6e10 ~
+Color:      red_ #c04d3a ~
+Color:      gold #8f6e01 ~
 Color:      gren #4d802c ~
 Color:      cyan #008888 ~
 Color:      blue #2079c1 ~
@@ -114,8 +114,8 @@ Color:      sprd #ff5f5f 203
 Color:      spbl #5fafff 075
 Color:      spcy #00afaf 037
 Color:      spmg #d787d7 139
-Color:      red_ #c48576 ~
-Color:      gold #a89266 ~
+Color:      red_ #c98272 ~
+Color:      gold #a99260 ~
 Color:      gren #859c73 ~
 Color:      cyan #65a09e ~
 Color:      blue #7899c4 ~
