@@ -30,9 +30,11 @@ PmenuSel           gry3   gry0   reverse
 SignColumn         gry3   none
 StatusLine         gry3   gry0   reverse
 StatusLineTerm     gry3   gry0   reverse
+TabLineSel         gry3   gry0   reverse
 
 # reverse soft
 TermCursorNC       gry2   gry0   reverse
+Visual             gry2   gry0   reverse
 VisualNOS          gry2   gry0   reverse
 
 # highlit
@@ -66,9 +68,9 @@ SpellRare          none   none   g=undercurl   s=spmg   t=underline
 Function           mgnt   none
 Identifier         mgnt   none
 
-# reverse magenta warnings
-TooLong            mgnt   gry0   reverse
-WarningMsg         mgnt   gry0   reverse
+# reverse magenta errors
+Error              mgnt   gry0   reverse
+ErrorMsg           mgnt   gry0   reverse
 
 # red types
 StorageClass       red_   none
@@ -76,11 +78,9 @@ Structure          red_   none
 Type               red_   none
 Typedef            red_   none
 
-# reverse red errors and diff removals
+# reverse red diff removals
 DiffDelete         red_   gry0   reverse
 DiffRemoved        red_   gry0   reverse
-Error              red_   gry0   reverse
-ErrorMsg           red_   gry0   reverse
 
 # gold specials
 Debug              gold   none
@@ -92,9 +92,11 @@ SpecialKey         gold   none
 Tag                gold   none
 Todo               gold   none
 
-# reverse gold search matches diff changes
+# reverse gold diff changes
 DiffChanged        gold   gry0   reverse
 DiffText           gold   gry0   reverse
+
+# reverse altered-gold search matches
 Search             srch   grys   reverse
 
 # green actions
@@ -106,10 +108,9 @@ Operator           gren   none
 Repeat             gren   none
 Statement          gren   none
 
-# reverse green selected tab and diff additions
+# reverse green diff additions
 DiffAdd            gren   gry0   reverse
 DiffAdded          gren   gry0   reverse
-TabLineSel         gren   gry0   reverse
 
 # cyan meta-actions
 Define             cyan   none
@@ -118,8 +119,9 @@ Macro              cyan   none
 PreCondit          cyan   none
 PreProc            cyan   none
 
-# reverse cyan parenthesis match
-MatchParen         cyan   gry0   reverse
+# reverse cyan warnings
+TooLong            cyan   gry0   reverse
+WarningMsg         cyan   gry0   reverse
 
 # blue constants
 Boolean            blue   none
@@ -129,5 +131,5 @@ Float              blue   none
 Number             blue   none
 String             blue   none
 
-# reverse blue visual selection
-Visual             blue   gry0   reverse
+# reverse blue parenthesis match
+MatchParen         blue   gryc   reverse

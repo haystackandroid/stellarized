@@ -42,7 +42,9 @@ if &background ==# 'dark'
   hi SignColumn ctermfg=145 ctermbg=NONE guifg=#baa999 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi StatusLine ctermfg=145 ctermbg=236 guifg=#baa999 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi StatusLineTerm ctermfg=145 ctermbg=236 guifg=#baa999 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi TabLineSel ctermfg=145 ctermbg=236 guifg=#baa999 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi TermCursorNC ctermfg=244 ctermbg=236 guifg=#8f7f70 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi Visual ctermfg=244 ctermbg=236 guifg=#8f7f70 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi VisualNOS ctermfg=244 ctermbg=236 guifg=#8f7f70 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi ColorColumn ctermfg=NONE ctermbg=237 guifg=NONE guibg=#323748 guisp=NONE cterm=NONE gui=NONE
   hi CursorColumn ctermfg=NONE ctermbg=237 guifg=NONE guibg=#323748 guisp=NONE cterm=NONE gui=NONE
@@ -67,16 +69,14 @@ if &background ==# 'dark'
   hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#d787d7 cterm=NONE,underline gui=NONE,undercurl
   hi Function ctermfg=139 ctermbg=NONE guifg=#b289ab guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Identifier ctermfg=139 ctermbg=NONE guifg=#b289ab guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi TooLong ctermfg=139 ctermbg=236 guifg=#b289ab guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi WarningMsg ctermfg=139 ctermbg=236 guifg=#b289ab guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi Error ctermfg=139 ctermbg=236 guifg=#b289ab guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi ErrorMsg ctermfg=139 ctermbg=236 guifg=#b289ab guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi StorageClass ctermfg=174 ctermbg=NONE guifg=#c48576 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Structure ctermfg=174 ctermbg=NONE guifg=#c48576 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Type ctermfg=174 ctermbg=NONE guifg=#c48576 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Typedef ctermfg=174 ctermbg=NONE guifg=#c48576 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi DiffDelete ctermfg=174 ctermbg=236 guifg=#c48576 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi DiffRemoved ctermfg=174 ctermbg=236 guifg=#c48576 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi Error ctermfg=174 ctermbg=236 guifg=#c48576 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi ErrorMsg ctermfg=174 ctermbg=236 guifg=#c48576 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi Debug ctermfg=137 ctermbg=NONE guifg=#a89266 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Delimiter ctermfg=137 ctermbg=NONE guifg=#a89266 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Special ctermfg=137 ctermbg=NONE guifg=#a89266 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -97,20 +97,20 @@ if &background ==# 'dark'
   hi Statement ctermfg=108 ctermbg=NONE guifg=#859c73 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi DiffAdd ctermfg=108 ctermbg=236 guifg=#859c73 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi DiffAdded ctermfg=108 ctermbg=236 guifg=#859c73 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-  hi TabLineSel ctermfg=108 ctermbg=236 guifg=#859c73 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi Define ctermfg=73 ctermbg=NONE guifg=#65a09e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Include ctermfg=73 ctermbg=NONE guifg=#65a09e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Macro ctermfg=73 ctermbg=NONE guifg=#65a09e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi PreCondit ctermfg=73 ctermbg=NONE guifg=#65a09e guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi PreProc ctermfg=73 ctermbg=NONE guifg=#65a09e guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi MatchParen ctermfg=73 ctermbg=236 guifg=#65a09e guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi TooLong ctermfg=73 ctermbg=236 guifg=#65a09e guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi WarningMsg ctermfg=73 ctermbg=236 guifg=#65a09e guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   hi Boolean ctermfg=110 ctermbg=NONE guifg=#7899c4 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Character ctermfg=110 ctermbg=NONE guifg=#7899c4 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Constant ctermfg=110 ctermbg=NONE guifg=#7899c4 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Float ctermfg=110 ctermbg=NONE guifg=#7899c4 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Number ctermfg=110 ctermbg=NONE guifg=#7899c4 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi String ctermfg=110 ctermbg=NONE guifg=#7899c4 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-  hi Visual ctermfg=110 ctermbg=236 guifg=#7899c4 guibg=#282d3e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+  hi MatchParen ctermfg=110 ctermbg=223 guifg=#7899c4 guibg=#f4e1d1 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
   finish
 endif
 
@@ -139,7 +139,9 @@ hi PmenuSel ctermfg=60 ctermbg=255 guifg=#585c6f guibg=#fff3e2 guisp=NONE cterm=
 hi SignColumn ctermfg=60 ctermbg=NONE guifg=#585c6f guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi StatusLine ctermfg=60 ctermbg=255 guifg=#585c6f guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi StatusLineTerm ctermfg=60 ctermbg=255 guifg=#585c6f guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi TabLineSel ctermfg=60 ctermbg=255 guifg=#585c6f guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi TermCursorNC ctermfg=103 ctermbg=255 guifg=#7d8195 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi Visual ctermfg=103 ctermbg=255 guifg=#7d8195 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi VisualNOS ctermfg=103 ctermbg=255 guifg=#7d8195 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi ColorColumn ctermfg=NONE ctermbg=223 guifg=NONE guibg=#f4e1d1 guisp=NONE cterm=NONE gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=223 guifg=NONE guibg=#f4e1d1 guisp=NONE cterm=NONE gui=NONE
@@ -164,16 +166,14 @@ hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#008787 cter
 hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#d700d7 cterm=NONE,underline gui=NONE,undercurl
 hi Function ctermfg=133 ctermbg=NONE guifg=#a8559e guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Identifier ctermfg=133 ctermbg=NONE guifg=#a8559e guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi TooLong ctermfg=133 ctermbg=255 guifg=#a8559e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi WarningMsg ctermfg=133 ctermbg=255 guifg=#a8559e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi Error ctermfg=133 ctermbg=255 guifg=#a8559e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi ErrorMsg ctermfg=133 ctermbg=255 guifg=#a8559e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi StorageClass ctermfg=131 ctermbg=NONE guifg=#bc503e guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Structure ctermfg=131 ctermbg=NONE guifg=#bc503e guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Type ctermfg=131 ctermbg=NONE guifg=#bc503e guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Typedef ctermfg=131 ctermbg=NONE guifg=#bc503e guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi DiffDelete ctermfg=131 ctermbg=255 guifg=#bc503e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi DiffRemoved ctermfg=131 ctermbg=255 guifg=#bc503e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi Error ctermfg=131 ctermbg=255 guifg=#bc503e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi ErrorMsg ctermfg=131 ctermbg=255 guifg=#bc503e guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Debug ctermfg=94 ctermbg=NONE guifg=#8e6e10 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Delimiter ctermfg=94 ctermbg=NONE guifg=#8e6e10 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Special ctermfg=94 ctermbg=NONE guifg=#8e6e10 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -194,20 +194,20 @@ hi Repeat ctermfg=28 ctermbg=NONE guifg=#4d802c guibg=NONE guisp=NONE cterm=NONE
 hi Statement ctermfg=28 ctermbg=NONE guifg=#4d802c guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi DiffAdd ctermfg=28 ctermbg=255 guifg=#4d802c guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi DiffAdded ctermfg=28 ctermbg=255 guifg=#4d802c guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi TabLineSel ctermfg=28 ctermbg=255 guifg=#4d802c guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Define ctermfg=30 ctermbg=NONE guifg=#008888 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Include ctermfg=30 ctermbg=NONE guifg=#008888 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Macro ctermfg=30 ctermbg=NONE guifg=#008888 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi PreCondit ctermfg=30 ctermbg=NONE guifg=#008888 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi PreProc ctermfg=30 ctermbg=NONE guifg=#008888 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi MatchParen ctermfg=30 ctermbg=255 guifg=#008888 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi TooLong ctermfg=30 ctermbg=255 guifg=#008888 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi WarningMsg ctermfg=30 ctermbg=255 guifg=#008888 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Boolean ctermfg=32 ctermbg=NONE guifg=#2079c1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Character ctermfg=32 ctermbg=NONE guifg=#2079c1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Constant ctermfg=32 ctermbg=NONE guifg=#2079c1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Float ctermfg=32 ctermbg=NONE guifg=#2079c1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Number ctermfg=32 ctermbg=NONE guifg=#2079c1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi String ctermfg=32 ctermbg=NONE guifg=#2079c1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Visual ctermfg=32 ctermbg=255 guifg=#2079c1 guibg=#fff3e2 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi MatchParen ctermfg=32 ctermbg=237 guifg=#2079c1 guibg=#323748 guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 finish
 
 " Background: light
@@ -253,7 +253,9 @@ finish
 " SignColumn         gry3   none
 " StatusLine         gry3   gry0   reverse
 " StatusLineTerm     gry3   gry0   reverse
+" TabLineSel         gry3   gry0   reverse
 " TermCursorNC       gry2   gry0   reverse
+" Visual             gry2   gry0   reverse
 " VisualNOS          gry2   gry0   reverse
 " ColorColumn        none   gry1
 " CursorColumn       none   gry1
@@ -278,16 +280,14 @@ finish
 " SpellRare          none   none   g=undercurl   s=spmg   t=underline
 " Function           mgnt   none
 " Identifier         mgnt   none
-" TooLong            mgnt   gry0   reverse
-" WarningMsg         mgnt   gry0   reverse
+" Error              mgnt   gry0   reverse
+" ErrorMsg           mgnt   gry0   reverse
 " StorageClass       red_   none
 " Structure          red_   none
 " Type               red_   none
 " Typedef            red_   none
 " DiffDelete         red_   gry0   reverse
 " DiffRemoved        red_   gry0   reverse
-" Error              red_   gry0   reverse
-" ErrorMsg           red_   gry0   reverse
 " Debug              gold   none
 " Delimiter          gold   none
 " Special            gold   none
@@ -308,20 +308,20 @@ finish
 " Statement          gren   none
 " DiffAdd            gren   gry0   reverse
 " DiffAdded          gren   gry0   reverse
-" TabLineSel         gren   gry0   reverse
 " Define             cyan   none
 " Include            cyan   none
 " Macro              cyan   none
 " PreCondit          cyan   none
 " PreProc            cyan   none
-" MatchParen         cyan   gry0   reverse
+" TooLong            cyan   gry0   reverse
+" WarningMsg         cyan   gry0   reverse
 " Boolean            blue   none
 " Character          blue   none
 " Constant           blue   none
 " Float              blue   none
 " Number             blue   none
 " String             blue   none
-" Visual             blue   gry0   reverse
+" MatchParen         blue   gryc   reverse
 " Background: dark
 " Color:      gry0 #282d3e ~
 " Color:      gry1 #323748 ~
@@ -365,7 +365,9 @@ finish
 " SignColumn         gry3   none
 " StatusLine         gry3   gry0   reverse
 " StatusLineTerm     gry3   gry0   reverse
+" TabLineSel         gry3   gry0   reverse
 " TermCursorNC       gry2   gry0   reverse
+" Visual             gry2   gry0   reverse
 " VisualNOS          gry2   gry0   reverse
 " ColorColumn        none   gry1
 " CursorColumn       none   gry1
@@ -390,16 +392,14 @@ finish
 " SpellRare          none   none   g=undercurl   s=spmg   t=underline
 " Function           mgnt   none
 " Identifier         mgnt   none
-" TooLong            mgnt   gry0   reverse
-" WarningMsg         mgnt   gry0   reverse
+" Error              mgnt   gry0   reverse
+" ErrorMsg           mgnt   gry0   reverse
 " StorageClass       red_   none
 " Structure          red_   none
 " Type               red_   none
 " Typedef            red_   none
 " DiffDelete         red_   gry0   reverse
 " DiffRemoved        red_   gry0   reverse
-" Error              red_   gry0   reverse
-" ErrorMsg           red_   gry0   reverse
 " Debug              gold   none
 " Delimiter          gold   none
 " Special            gold   none
@@ -420,17 +420,17 @@ finish
 " Statement          gren   none
 " DiffAdd            gren   gry0   reverse
 " DiffAdded          gren   gry0   reverse
-" TabLineSel         gren   gry0   reverse
 " Define             cyan   none
 " Include            cyan   none
 " Macro              cyan   none
 " PreCondit          cyan   none
 " PreProc            cyan   none
-" MatchParen         cyan   gry0   reverse
+" TooLong            cyan   gry0   reverse
+" WarningMsg         cyan   gry0   reverse
 " Boolean            blue   none
 " Character          blue   none
 " Constant           blue   none
 " Float              blue   none
 " Number             blue   none
 " String             blue   none
-" Visual             blue   gry0   reverse
+" MatchParen         blue   gryc   reverse
