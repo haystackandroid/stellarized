@@ -6,23 +6,23 @@ Short name:      stellarized
 Terminal Colors: 256
 
 Background: light
-Color:      gry0 #fff3e2 255
-Color:      gry1 #f4e1d1 254
-Color:      gry2 #7d8195 244
-Color:      gry3 #585c6f 059
-Color:      gryc #323748 237
-Color:      srch #e8bc4a 178
-Color:      grys #323748 237
-Color:      sprd #ff005f 197
+Color:      gry0 #fff3e2 ~
+Color:      gry1 #f4e1d1 ~
+Color:      gry2 #7d8195 ~
+Color:      gry3 #585c6f ~
+Color:      gryc #323748 ~
+Color:      srch #e8bc4a ~
+Color:      grys #323748 ~
+Color:      sprd #ff0000 196
 Color:      spbl #0087ff 033
-Color:      spcy #0087af 031
+Color:      spcy #008787 030
 Color:      spmg #d700d7 164
-Color:      red_ #c04c48 131
-Color:      gold #8e6e10 094
-Color:      gren #3f8234 028
-Color:      cyan #008888 030
-Color:      blue #2079c1 032
-Color:      mgnt #a8559e 133
+Color:      red_ #bc503e ~
+Color:      gold #8e6e10 ~
+Color:      gren #4d802c ~
+Color:      cyan #008888 ~
+Color:      blue #2079c1 ~
+Color:      mgnt #a8559e ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_light.vim
@@ -101,23 +101,23 @@ let g:lightline#colorscheme#stellarized_light#palette =
 endauxfile
 
 Background: dark
-Color:      gry0 #282d3e 236
-Color:      gry1 #323748 237
-Color:      gry2 #8f7f70 244
-Color:      gry3 #baa999 248
-Color:      gryc #f4e1d1 254
-Color:      srch #a89266 137
-Color:      grys #282d3e 236
-Color:      sprd #ff005f 197
-Color:      spbl #0087ff 033
-Color:      spcy #0087af 031
-Color:      spmg #d700d7 164
-Color:      red_ #c6837c 174
-Color:      gold #a89266 137
-Color:      gren #7f9d77 108
-Color:      cyan #65a09e 073
-Color:      blue #7899c4 110
-Color:      mgnt #b289ab 139
+Color:      gry0 #282d3e ~
+Color:      gry1 #323748 ~
+Color:      gry2 #8f7f70 ~
+Color:      gry3 #baa999 ~
+Color:      gryc #f4e1d1 ~
+Color:      srch #776333 ~
+Color:      grys #f4e1d1 ~
+Color:      sprd #ff5f5f 203
+Color:      spbl #5fafff 075
+Color:      spcy #00afaf 037
+Color:      spmg #d787d7 139
+Color:      red_ #c48576 ~
+Color:      gold #a89266 ~
+Color:      gren #859c73 ~
+Color:      cyan #65a09e ~
+Color:      blue #7899c4 ~
+Color:      mgnt #b289ab ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_dark.vim
