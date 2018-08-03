@@ -1,4 +1,4 @@
-# regular
+# regular text
 Bold               none   none   bold
 Conceal            none   none
 Directory          none   none   bold
@@ -14,17 +14,12 @@ Terminal           none   none
 Title              none   none   bold
 Underlined         none   none   underline
 
-# soft
+# soft text
 Comment            gry2   none
 CursorLineNr       gry2   none
 LineNr             gry2   none
 
-# reverse hard
-Cursor             gryc   gry0   reverse
-IncSearch          gryc   gry0   reverse
-TermCursor         gryc   gry0   reverse
-
-# reverse regular
+# reverse regular text
 FoldColumn         gry3   none
 PmenuSel           gry3   gry0   reverse
 SignColumn         gry3   none
@@ -32,10 +27,13 @@ StatusLine         gry3   gry0   reverse
 StatusLineTerm     gry3   gry0   reverse
 TabLineSel         gry3   gry0   reverse
 
-# reverse soft
-TermCursorNC       gry2   gry0   reverse
+# reverse soft text
 Visual             gry2   gry0   reverse
-VisualNOS          gry2   gry0   reverse
+VisualNOS          gryp   gry0   reverse
+
+# reverse hard text
+Cursor             gryc   gry0   reverse
+IncSearch          gryc   gry0   reverse
 
 # highlit
 ColorColumn        none   gry1
@@ -43,6 +41,7 @@ CursorColumn       none   gry1
 CursorLine         none   gry1
 DiffChange         none   gry1
 Folded             none   gry1
+MatchParen         gryc   gryp
 Pmenu              gry3   gry1
 QuickFixLine       none   gry1
 StatusLineNC       gry3   gry1
@@ -51,14 +50,14 @@ TabLine            gry3   gry1
 ToolbarButton      gry3   gry1   bold
 WildMenu           gry3   gry1
 
-# solid
-PmenuSbar          gry2   gry2
+# solid lines
+PmenuSbar          gryp   gryp
 PmenuThumb         gry3   gry3
 TabLineFill        gry1   gry1
 ToolbarLine        gry1   gry1
-VertSplit          gry2   gry2
+VertSplit          gryp   gryp
 
-# undercurled
+# spellcheck undercurls
 SpellBad           none   none   g=undercurl   s=sprd   t=underline
 SpellCap           none   none   g=undercurl   s=spbl   t=underline
 SpellLocal         none   none   g=undercurl   s=spcy   t=underline
@@ -90,7 +89,6 @@ SpecialChar        gold   none
 SpecialComment     gold   none
 SpecialKey         gold   none
 Tag                gold   none
-Todo               gold   none
 
 # reverse gold diff changes
 DiffChanged        gold   gry0   reverse
@@ -99,7 +97,7 @@ DiffText           gold   gry0   reverse
 # reverse altered-gold search matches
 Search             srch   grys   reverse
 
-# green actions
+# green statements
 Conditional        gren   none
 Exception          gren   none
 Keyword            gren   none
@@ -112,7 +110,7 @@ Statement          gren   none
 DiffAdd            gren   gry0   reverse
 DiffAdded          gren   gry0   reverse
 
-# cyan meta-actions
+# cyan meta-statements
 Define             cyan   none
 Include            cyan   none
 Macro              cyan   none
@@ -131,5 +129,5 @@ Float              blue   none
 Number             blue   none
 String             blue   none
 
-# reverse blue parenthesis match
-MatchParen         blue   gryc   reverse
+# reverse blue todos
+Todo               blue   gry0   reverse
