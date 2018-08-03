@@ -93,17 +93,14 @@ stellarized comes with themes for airline and lightline, which can be activated 
 
 <table><tbody align='center'>
 <tr>
-<td width='88'></td>
-<td width='340'><strong>airline</strong></td>
-<td width='470'><strong>lightline</strong></td>
+<td><strong>airline</strong></td>
+<td><strong>lightline</strong></td>
 </tr>
 <tr>
-<td><strong>light</strong></td>
 <td><code>let g:airline_theme='stellarized_light'</code></td>
 <td><code>let g:lightline = { 'colorscheme': 'stellarized_light' }</code></td>
 </tr>
 <tr>
-<td><strong>dark</strong></td>
 <td><code>let g:airline_theme='stellarized_dark'</code></td>
 <td><code>let g:lightline = { 'colorscheme': 'stellarized_dark' }</code></td>
 </tr>
