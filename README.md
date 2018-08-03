@@ -30,7 +30,7 @@
 
 <h5>Specifically, dark base colors are shifted bluewise (to<br>the approximate "hot star hue"), while light base colors<br>are shifted orangewise (to the "cold star hue").</h5>
 
-<h5>stellarized is a special adaptation of <a href='https://github.com/nightsense/snow'>snow</a>.</h5>
+<h5>stellarized is a special adaptation of <a href='https://github.com/nightsense/stellarized'>stellarized</a>.</h5>
 
 </td></tr>
 
@@ -39,14 +39,14 @@
 
 ## installation
 
-If you don’t have a preferred plugin helper, consider trying [vim-plug](https://github.com/junegunn/vim-plug), which can be installed with:
+If you don’t have a preferred plugin management method, consider [vim-plug](https://github.com/junegunn/vim-plug), which can be installed (on \*nix systems) with:
 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-With vim-plug, stellarized can be installed by adding the following to the top of your vimrc...
+Having installed vim-plug, stellarized can be installed by adding the following to the top of your vimrc...
 
 ```
 call plug#begin('~/.vim/plugged')
@@ -54,7 +54,7 @@ Plug 'nightsense/stellarized'
 call plug#end()
 ```
 
-...then reloading vimrc (by running `:so %` at the vim command line, or by restarting vim), followed by `:PlugUpdate`.
+...then restarting vim, followed by running `:PlugUpdate` (at the vim command line).
 
 ## activation
 
@@ -83,25 +83,31 @@ endif
 colorscheme stellarized
 ```
 
-...which activates the light version of stellarized during the day (7AM-7PM), dark version at night.
+...which activates the light version of stellarized during the day (defined here as 7AM-7PM), dark version at night.
 
-> The [night-and-day](https://github.com/nightsense/night-and-day) plugin can switch themes and/or backgrounds automatically, using absolute or sun-relative time.
+> Be sure to set `colorscheme` after `background`, otherwise some theme colors may not be applied.
 
 ## status line themes
 
-stellarized comes with light and dark themes for airline and lightline.
+stellarized comes with themes for airline and lightline, which can be activated with the following vimrc code:
 
-For instance, to activate the airline theme with dark background:
-
-```
-let g:airline_theme='stellarized_dark'
-```
-
-Or the lightline theme with light background:
-
-```
-let g:lightline = { 'colorscheme': 'stellarized_light' }
-```
+<table><tbody align='center'>
+<tr>
+<td width='88'></td>
+<td width='340'><strong>airline</strong></td>
+<td width='470'><strong>lightline</strong></td>
+</tr>
+<tr>
+<td><strong>light</strong></td>
+<td><code>let g:airline_theme='stellarized_light'</code></td>
+<td><code>let g:lightline = { 'colorscheme': 'stellarized_light' }</code></td>
+</tr>
+<tr>
+<td><strong>dark</strong></td>
+<td><code>let g:airline_theme='stellarized_dark'</code></td>
+<td><code>let g:lightline = { 'colorscheme': 'stellarized_dark' }</code></td>
+</tr>
+</tbody></table>
 
 Status line themes can be added to the time-based snippet above:
 
@@ -120,17 +126,28 @@ colorscheme stellarized
 
 ### colors
 
-stellarized should work in 256-color and true-color terminals. You may need the following in vimrc:
+Terminals/multiplexers with [true-color support](https://gist.github.com/XVilka/8346728#now-supporting-truecolour) can display the exact colors of the stellarized theme.
+
+In most cases, the only vimrc setting you need is:
 
 ```
 set termguicolors
 ```
 
+In some cases you'll also need (see `:h xterm-true-color` for explanation):
+
+```
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+```
+
+If `termguicolors` is not set, terminal vim will fall back to a rough approximation of stellarized, drawing from the terminal emulator's 256-color palette (if present).
+
 ### cursor shape
 
 To set mode-specific cursor shapes in terminal vim, see the [Vim Tips Wiki](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes).
 
-For instance, to set cursor shapes in vte-compatible terminals (like urxvt), you could add to vimrc:
+For instance, to set cursor shapes in vte-compatible terminals, you could add to vimrc:
 
 ```
 let &t_SI = "\<Esc>[6 q"
