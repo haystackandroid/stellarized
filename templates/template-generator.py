@@ -6,7 +6,7 @@ def tohex(l,c,h):
   clamp = sRGBColor(rgb.clamped_rgb_r, rgb.clamped_rgb_g, rgb.clamped_rgb_b)
   return clamp.get_rgb_hex()
 
-def gold(e):
+def phic(e):
   return 0.61803398875**e*100
 
 def print_airline(name,bg):
@@ -91,45 +91,206 @@ def print_lightline(name,bg):
   print '  \ lightline#colorscheme#flatten(s:p)'
   print 'endauxfile'
 
+def print_shell(name,bg):
+  print 'auxfile shell/%s_%s.sh' % (name, bg)
+  print '#!/bin/sh'
+  print '# base16-shell (https://github.com/chriskempson/base16-shell)'
+  print '# Base16 Shell template by Chris Kempson (http://chriskempson.com)'
+  print '# %s_%s scheme by nightsense (https://github.com/nightsense/stellarized)' % (name, bg)
+  print ''
+  print 'color00="@guigry0" # Base 00 - Black'
+  print 'color01="@guired_" # Base 08 - Red'
+  print 'color02="@guigren" # Base 0B - Green'
+  print 'color03="@guigold" # Base 0A - Yellow'
+  print 'color04="@guiblue" # Base 0D - Blue'
+  print 'color05="@guimgnt" # Base 0E - Magenta'
+  print 'color06="@guicyan" # Base 0C - Cyan'
+  print 'color07="@guigry3" # Base 05 - White'
+  print 'color08="@guigry1" # Base 03 - Bright Black'
+  print 'color09=$color01 # Base 08 - Bright Red'
+  print 'color10=$color02 # Base 0B - Bright Green'
+  print 'color11=$color03 # Base 0A - Bright Yellow'
+  print 'color12=$color04 # Base 0D - Bright Blue'
+  print 'color13=$color05 # Base 0E - Bright Magenta'
+  print 'color14=$color06 # Base 0C - Bright Cyan'
+  print 'color15="@guigryc" # Base 07 - Bright White'
+  print 'color_foreground="@guigry3" # Base 05'
+  print 'color_background="@guigry0" # Base 00'
+  print ''
+  print 'if [ -n "$TMUX" ]; then'
+  print "  # Tell tmux to pass the escape sequences through"
+  print "  # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)"
+  print "  put_template() { printf '\033Ptmux;\033\033]4;%d;rgb:%s\033\033\\\033\\' $@; }"
+  print "  put_template_var() { printf '\033Ptmux;\033\033]%d;rgb:%s\033\033\\\033\\' $@; }"
+  print "  put_template_custom() { printf '\033Ptmux;\033\033]%s%s\033\033\\\033\\' $@; }"
+  print 'elif [ "${TERM%%[-.]*}" = "screen" ]; then'
+  print "  # GNU screen (screen, screen-256color, screen-256color-bce)"
+  print "  put_template() { printf '\033P\033]4;%d;rgb:%s\007\033\\' $@; }"
+  print "  put_template_var() { printf '\033P\033]%d;rgb:%s\007\033\\' $@; }"
+  print "  put_template_custom() { printf '\033P\033]%s%s\007\033\\' $@; }"
+  print 'elif [ "${TERM%%-*}" = "linux" ]; then'
+  print '  put_template() { [ $1 -lt 16 ] && printf "\e]P%x%s" $1 $(echo $2 | sed "s/\///g"); }'
+  print "  put_template_var() { true; }"
+  print "  put_template_custom() { true; }"
+  print "else"
+  print "  put_template() { printf '\033]4;%d;rgb:%s\033\\' $@; }"
+  print "  put_template_var() { printf '\033]%d;rgb:%s\033\\' $@; }"
+  print "  put_template_custom() { printf '\033]%s%s\033\\' $@; }"
+  print "fi"
+  print ''
+  print '# 16 color space'
+  print 'put_template 0  $color00'
+  print 'put_template 1  $color01'
+  print 'put_template 2  $color02'
+  print 'put_template 3  $color03'
+  print 'put_template 4  $color04'
+  print 'put_template 5  $color05'
+  print 'put_template 6  $color06'
+  print 'put_template 7  $color07'
+  print 'put_template 8  $color08'
+  print 'put_template 9  $color09'
+  print 'put_template 10 $color10'
+  print 'put_template 11 $color11'
+  print 'put_template 12 $color12'
+  print 'put_template 13 $color13'
+  print 'put_template 14 $color14'
+  print 'put_template 15 $color15'
+  print ''
+  print '# foreground / background / cursor color'
+  print 'if [ -n "$ITERM_SESSION_ID" ]; then'
+  print '  # iTerm2 proprietary escape codes'
+  print '  put_template_custom Pg @guigry3 # foreground'
+  print '  put_template_custom Ph @guigry0 # background'
+  print '  put_template_custom Pi @guigry3 # bold color'
+  print '  put_template_custom Pj @guiblue # selection color'
+  print '  put_template_custom Pk @guigry0 # selected text color'
+  print '  put_template_custom Pl @guigry3 # cursor'
+  print '  put_template_custom Pm @guigry0 # cursor text'
+  print 'else'
+  print '  put_template_var 10 $color_foreground'
+  print '  if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then'
+  print '    put_template_var 11 $color_background'
+  print '    if [ "${TERM%%-*}" = "rxvt" ]; then'
+  print '      put_template_var 708 $color_background # internal border (rxvt)'
+  print '    fi'
+  print '  fi'
+  print '  put_template_custom 12 ";7" # cursor (reverse video)'
+  print 'fi'
+  print ''
+  print '# clean up'
+  print 'unset -f put_template'
+  print 'unset -f put_template_var'
+  print 'unset -f put_template_custom'
+  print 'unset color00'
+  print 'unset color01'
+  print 'unset color02'
+  print 'unset color03'
+  print 'unset color04'
+  print 'unset color05'
+  print 'unset color06'
+  print 'unset color07'
+  print 'unset color08'
+  print 'unset color09'
+  print 'unset color10'
+  print 'unset color11'
+  print 'unset color12'
+  print 'unset color13'
+  print 'unset color14'
+  print 'unset color15'
+  print 'unset color_foreground'
+  print 'unset color_background'
+  print 'endauxfile'
+
+def print_fish(name,bg):
+  print 'auxfile shell/%s_%s.fish' % (name, bg)
+  print '# %s_%s fish shell theme by nightsense (https://github.com/nightsense/stellarized)' % (name, bg)
+  print ''
+  print'# normal text'
+  print'set fish_color_host              @guigry3'
+  print'set fish_color_normal            @guigry3'
+  print'set fish_pager_color_completion  @guigry3'
+  print'set fish_pager_color_description @guigry3'
+  print''
+  print'# muted text'
+  print'set fish_color_autosuggestion    @guigry2'
+  print'set fish_color_comment           @guigry2'
+  print''
+  print'# reverse muted'
+  print'set fish_pager_color_progress    @guigry0 --background=@guigry2'
+  print''
+  print'# underlined text'
+  print'set fish_color_valid_path        --underline'
+  print''
+  print'# highlit text'
+  print'set fish_color_match             --background=@guigryp'
+  print'set fish_color_search_match      --background=@guigryp'
+  print'set fish_color_selection         --background=@guigryp'
+  print''
+  print'# red errors/warnings'
+  print'set fish_color_cancel            @guired_'
+  print'set fish_color_cwd_root          @guired_'
+  print'set fish_color_error             @guired_'
+  print''
+  print'# gold special elements'
+  print'set fish_color_redirection       @guigold'
+  print'set fish_color_escape            @guigold'
+  print'set fish_color_operator          @guigold'
+  print'set fish_color_end               @guigold'
+  print''
+  print'# green commands/status'
+  print'set fish_color_command           @guigren'
+  print'set fish_color_cwd               @guigren'
+  print'set fish_color_user              @guigren'
+  print''
+  print'# cyan parameters'
+  print'set fish_color_param             @guicyan'
+  print''
+  print'# blue quoted strings'
+  print'set fish_color_quote             @guiblue'
+  print''
+  print'# magenta pager name match'
+  print'set fish_pager_color_prefix      @guimgnt'
+  print 'endauxfile'
+
 hue_bas0 = 067.5
 hue_bas1 = 277.5
 
-hue_red_ = 037.5
+hue_red_ = 022.5
 hue_gold = 082.5
-hue_gren = 127.5
-hue_cyan = 195.0
+hue_gren = 142.5
+hue_cyan = 202.5
 hue_blue = 262.5
-hue_mgnt = 330.0
+hue_mgnt = 322.5
 
-lum_ltacnt = gold(1.50)
-lum_dkacnt = gold(1.00)
+cro_ltacnt = phic(1.00)
+cro_dkacnt = phic(2.00)
 
-hexgry0_lt = tohex( gold(0.06) , gold(4.50) , hue_bas0 )
-hexgry1_lt = tohex( gold(0.20) , gold(4.50) , hue_bas0 )
-hexgry2_lt = tohex( gold(1.27) , gold(4.50) , hue_bas1 )
-hexgry3_lt = tohex( gold(1.94) , gold(4.50) , hue_bas1 )
+hexgry0_lt = tohex( phic(0.08) , phic(5.75) , hue_bas0 )
+hexgry1_lt = tohex( phic(0.21) , phic(5.00) , hue_bas0 )
+hexgry2_lt = tohex( phic(1.28) , phic(4.25) , hue_bas1 )
+hexgry3_lt = tohex( phic(1.94) , phic(4.25) , hue_bas1 )
 
-hexgry0_dk = tohex( gold(3.50) , gold(4.50) , hue_bas1 )
-hexgry1_dk = tohex( gold(3.05) , gold(4.50) , hue_bas1 )
-hexgry2_dk = tohex( gold(1.27) , gold(4.50) , hue_bas0 )
-hexgry3_dk = tohex( gold(0.73) , gold(4.50) , hue_bas0 )
+hexgry0_dk = tohex( phic(3.50) , phic(5.75) , hue_bas1 )
+hexgry1_dk = tohex( phic(3.04) , phic(5.00) , hue_bas1 )
+hexgry2_dk = tohex( phic(1.28) , phic(4.25) , hue_bas0 )
+hexgry3_dk = tohex( phic(0.73) , phic(4.25) , hue_bas0 )
 
-hexred__lt = tohex( lum_ltacnt , gold(1.19) , hue_red_ )
-hexgold_lt = tohex( lum_ltacnt , gold(1.31) , hue_gold )
-hexgren_lt = tohex( lum_ltacnt , gold(1.44) , hue_gren )
-hexcyan_lt = tohex( lum_ltacnt , gold(1.31) , hue_cyan )
-hexblue_lt = tohex( lum_ltacnt , gold(1.50) , hue_blue )
-hexmgnt_lt = tohex( lum_ltacnt , gold(1.44) , hue_mgnt )
+hexred__lt = tohex( phic(1.53) , cro_ltacnt , hue_red_ )
+hexgold_lt = tohex( phic(1.55) , cro_ltacnt , hue_gold )
+hexgren_lt = tohex( phic(1.57) , cro_ltacnt , hue_gren )
+hexcyan_lt = tohex( phic(1.77) , cro_ltacnt , hue_cyan )
+hexblue_lt = tohex( phic(1.70) , cro_ltacnt , hue_blue )
+hexmgnt_lt = tohex( phic(1.57) , cro_ltacnt , hue_mgnt )
 
-hexred__dk = tohex( lum_dkacnt , gold(2.38) , hue_red_ )
-hexgold_dk = tohex( lum_dkacnt , gold(2.62) , hue_gold )
-hexgren_dk = tohex( lum_dkacnt , gold(2.88) , hue_gren )
-hexblue_dk = tohex( lum_dkacnt , gold(2.62) , hue_blue )
-hexcyan_dk = tohex( lum_dkacnt , gold(3.00) , hue_cyan )
-hexmgnt_dk = tohex( lum_dkacnt , gold(2.88) , hue_mgnt )
+hexred__dk = tohex( phic(1.01) , cro_dkacnt , hue_red_ )
+hexgold_dk = tohex( phic(1.00) , cro_dkacnt , hue_gold )
+hexgren_dk = tohex( phic(1.02) , cro_dkacnt , hue_gren )
+hexblue_dk = tohex( phic(1.03) , cro_dkacnt , hue_blue )
+hexcyan_dk = tohex( phic(1.04) , cro_dkacnt , hue_cyan )
+hexmgnt_dk = tohex( phic(1.02) , cro_dkacnt , hue_mgnt )
 
-hexsrch_lt = tohex( gold(0.50) , gold(1.00) , hue_gold )
-hexsrch_dk = tohex( gold(1.75) , gold(2.50) , hue_gold )
+hexsrch_lt = tohex( phic(0.50) , phic(1.00) , hue_gold )
+hexsrch_dk = tohex( phic(1.50) , phic(2.50) , hue_gold )
 
 print 'Author:          nightsense'
 print 'Maintainer:      nightsense'
@@ -145,11 +306,12 @@ print 'Color:      gry2 %s ~' % hexgry2_lt
 print 'Color:      gry3 %s ~' % hexgry3_lt
 print 'Color:      gryc %s ~' % hexgry1_dk
 print 'Color:      srch %s ~' % hexsrch_lt
+print 'Color:      grys %s ~' % hexgry1_dk
 print 'Color:      gryp %s ~' % hexgry3_dk
-print 'Color:      sprd %s 196' % '#ff0000'
-print 'Color:      spbl %s 033' % '#0087ff'
-print 'Color:      spcy %s 030' % '#008787'
-print 'Color:      spmg %s 164' % '#d700d7'
+print 'Color:      sprd %s ~' % '#ff0000'
+print 'Color:      spbl %s ~' % '#0087ff'
+print 'Color:      spcy %s ~' % '#008787'
+print 'Color:      spmg %s ~' % '#d700d7'
 print 'Color:      red_ %s ~' % hexred__lt
 print 'Color:      gold %s ~' % hexgold_lt
 print 'Color:      gren %s ~' % hexgren_lt
@@ -162,6 +324,10 @@ print_airline('stellarized','light')
 print ''
 print_lightline('stellarized','light')
 print ''
+print_shell('stellarized','light')
+print ''
+print_fish('stellarized','light')
+print ''
 print 'Background: dark'
 print 'Color:      gry0 %s ~' % hexgry0_dk
 print 'Color:      gry1 %s ~' % hexgry1_dk
@@ -169,11 +335,12 @@ print 'Color:      gry2 %s ~' % hexgry2_dk
 print 'Color:      gry3 %s ~' % hexgry3_dk
 print 'Color:      gryc %s ~' % hexgry1_lt
 print 'Color:      srch %s ~' % hexsrch_dk
+print 'Color:      grys %s ~' % hexgry1_lt
 print 'Color:      gryp %s ~' % hexgry3_lt
-print 'Color:      sprd %s 203' % '#ff5f5f'
-print 'Color:      spbl %s 075' % '#5fafff'
-print 'Color:      spcy %s 037' % '#00afaf'
-print 'Color:      spmg %s 139' % '#d787d7'
+print 'Color:      sprd %s ~' % '#ff5f5f'
+print 'Color:      spbl %s ~' % '#5fafff'
+print 'Color:      spcy %s ~' % '#00afaf'
+print 'Color:      spmg %s ~' % '#d787d7'
 print 'Color:      red_ %s ~' % hexred__dk
 print 'Color:      gold %s ~' % hexgold_dk
 print 'Color:      gren %s ~' % hexgren_dk
@@ -185,3 +352,7 @@ print ''
 print_airline('stellarized','dark')
 print ''
 print_lightline('stellarized','dark')
+print ''
+print_shell('stellarized','dark')
+print ''
+print_fish('stellarized','dark')
