@@ -28,8 +28,7 @@ StatusLineTerm     gry3   gry0   reverse
 TabLineSel         gry3   gry0   reverse
 
 # reverse soft text
-Visual             gry2   gry0   reverse
-VisualNOS          gryp   gry0   reverse
+VisualNOS          gry2   gry0   reverse
 
 # reverse hard text
 Cursor             gryc   gry0   reverse
@@ -63,39 +62,39 @@ SpellCap           none   none   g=undercurl   s=spbl   t=underline
 SpellLocal         none   none   g=undercurl   s=spcy   t=underline
 SpellRare          none   none   g=undercurl   s=spmg   t=underline
 
-# magenta names
-Function           mgnt   none
-Identifier         mgnt   none
+# gold types
+StorageClass       gold   none
+Structure          gold   none
+Type               gold   none
+Typedef            gold   none
 
-# reverse magenta errors
-Error              mgnt   gry0   reverse
-ErrorMsg           mgnt   gry0   reverse
+# reverse magenta warnings
+TooLong            mgnt   gry0   reverse
+WarningMsg         mgnt   gry0   reverse
 
-# red types
-StorageClass       red_   none
-Structure          red_   none
-Type               red_   none
-Typedef            red_   none
+# blue names
+Function           blue   none
+Identifier         blue   none
 
-# reverse red diff removals
+# reverse red errors and diff removals
 DiffDelete         red_   gry0   reverse
 DiffRemoved        red_   gry0   reverse
+Error              red_   gry0   reverse
+ErrorMsg           red_   gry0   reverse
 
-# gold specials
-Debug              gold   none
-Delimiter          gold   none
-Special            gold   none
-SpecialChar        gold   none
-SpecialComment     gold   none
-SpecialKey         gold   none
-Tag                gold   none
+# red specials
+Debug              red_   none
+Delimiter          red_   none
+Special            red_   none
+SpecialChar        red_   none
+SpecialComment     red_   none
+SpecialKey         red_   none
+Tag                red_   none
 
-# reverse gold diff changes
+# reverse gold search matches and diff changes
 DiffChanged        gold   gry0   reverse
 DiffText           gold   gry0   reverse
-
-# reverse altered-gold search matches
-Search             srch   gryc   reverse
+Search             srch   grys   reverse
 
 # green statements
 Conditional        gren   none
@@ -110,24 +109,23 @@ Statement          gren   none
 DiffAdd            gren   gry0   reverse
 DiffAdded          gren   gry0   reverse
 
-# cyan meta-statements
-Define             cyan   none
-Include            cyan   none
-Macro              cyan   none
-PreCondit          cyan   none
-PreProc            cyan   none
+# magenta meta-statements
+Define             mgnt   none
+Include            mgnt   none
+Macro              mgnt   none
+PreCondit          mgnt   none
+PreProc            mgnt   none
 
-# reverse cyan warnings
-TooLong            cyan   gry0   reverse
-WarningMsg         cyan   gry0   reverse
+# reverse cyan todos
+Todo               cyan   gry0   reverse
 
-# blue constants
-Boolean            blue   none
-Character          blue   none
-Constant           blue   none
-Float              blue   none
-Number             blue   none
-String             blue   none
+# cyan constants
+Boolean            cyan   none
+Character          cyan   none
+Constant           cyan   none
+Float              cyan   none
+Number             cyan   none
+String             cyan   none
 
-# reverse blue todos
-Todo               blue   gry0   reverse
+# reverse blue visual selections
+Visual             blue   gry0   reverse

@@ -262,35 +262,50 @@ hue_cyan = 202.5
 hue_blue = 262.5
 hue_mgnt = 322.5
 
-cro_ltacnt = phic(1.00)
-cro_dkacnt = phic(2.00)
+cro_ltacnt = phic(0.75)
+cro_dkacnt = phic(1.50)
 
-hexgry0_lt = tohex( phic(0.08) , phic(5.75) , hue_bas0 )
-hexgry1_lt = tohex( phic(0.21) , phic(5.00) , hue_bas0 )
-hexgry2_lt = tohex( phic(1.28) , phic(4.25) , hue_bas1 )
-hexgry3_lt = tohex( phic(1.94) , phic(4.25) , hue_bas1 )
+hexgry0_lt = tohex( phic(0.11) , phic(5.00) , hue_bas0 )
+hexgry1_lt = tohex( phic(0.26) , phic(4.50) , hue_bas0 )
+hexgry2_lt = tohex( phic(1.62) , phic(4.00) , hue_bas1 )
+hexgry3_lt = tohex( phic(2.36) , phic(4.00) , hue_bas1 )
 
-hexgry0_dk = tohex( phic(3.50) , phic(5.75) , hue_bas1 )
-hexgry1_dk = tohex( phic(3.04) , phic(5.00) , hue_bas1 )
-hexgry2_dk = tohex( phic(1.28) , phic(4.25) , hue_bas0 )
-hexgry3_dk = tohex( phic(0.73) , phic(4.25) , hue_bas0 )
+hexgry0_dk = tohex( phic(3.95) , phic(5.00) , hue_bas1 )
+hexgry1_dk = tohex( phic(3.27) , phic(4.50) , hue_bas1 )
+hexgry2_dk = tohex( phic(1.12) , phic(4.00) , hue_bas0 )
+hexgry3_dk = tohex( phic(0.62) , phic(4.50) , hue_bas0 )
 
-hexred__lt = tohex( phic(1.53) , cro_ltacnt , hue_red_ )
-hexgold_lt = tohex( phic(1.55) , cro_ltacnt , hue_gold )
-hexgren_lt = tohex( phic(1.57) , cro_ltacnt , hue_gren )
-hexcyan_lt = tohex( phic(1.77) , cro_ltacnt , hue_cyan )
-hexblue_lt = tohex( phic(1.70) , cro_ltacnt , hue_blue )
-hexmgnt_lt = tohex( phic(1.57) , cro_ltacnt , hue_mgnt )
+hexred__lt = tohex( phic(1.56) , cro_ltacnt , hue_red_ )
+hexgold_lt = tohex( phic(1.59) , cro_ltacnt , hue_gold )
+hexgren_lt = tohex( phic(1.64) , cro_ltacnt , hue_gren )
+hexcyan_lt = tohex( phic(1.85) , cro_ltacnt , hue_cyan )
+hexblue_lt = tohex( phic(1.82) , cro_ltacnt , hue_blue )
+hexmgnt_lt = tohex( phic(1.61) , cro_ltacnt , hue_mgnt )
 
-hexred__dk = tohex( phic(1.01) , cro_dkacnt , hue_red_ )
-hexgold_dk = tohex( phic(1.00) , cro_dkacnt , hue_gold )
-hexgren_dk = tohex( phic(1.02) , cro_dkacnt , hue_gren )
-hexblue_dk = tohex( phic(1.03) , cro_dkacnt , hue_blue )
-hexcyan_dk = tohex( phic(1.04) , cro_dkacnt , hue_cyan )
-hexmgnt_dk = tohex( phic(1.02) , cro_dkacnt , hue_mgnt )
+hexred__dk = tohex( phic(1.11) , cro_dkacnt , hue_red_ )
+hexgold_dk = tohex( phic(1.11) , cro_dkacnt , hue_gold )
+hexgren_dk = tohex( phic(1.13) , cro_dkacnt , hue_gren )
+hexcyan_dk = tohex( phic(1.20) , cro_dkacnt , hue_cyan )
+hexblue_dk = tohex( phic(1.16) , cro_dkacnt , hue_blue )
+hexmgnt_dk = tohex( phic(1.13) , cro_dkacnt , hue_mgnt )
 
-hexsrch_lt = tohex( phic(0.50) , phic(1.00) , hue_gold )
-hexsrch_dk = tohex( phic(1.50) , phic(2.50) , hue_gold )
+hexsrch_lt = tohex( phic(0.25) , phic(0.25) , hue_gold )
+hexsrch_dk = tohex( phic(1.50) , phic(1.50) , hue_gold )
+
+lum_ltspel = phic(1.50)
+cro_ltspel = phic(0.00)
+lum_dkspel = phic(0.75)
+cro_dkspel = phic(0.75)
+
+hexsprd_lt = tohex( lum_ltspel , cro_ltspel , hue_red_ )
+hexspbl_lt = tohex( lum_ltspel , cro_ltspel , hue_blue )
+hexspcy_lt = tohex( lum_ltspel , cro_ltspel , hue_cyan )
+hexspmg_lt = tohex( lum_ltspel , cro_ltspel , hue_mgnt )
+
+hexsprd_dk = tohex( lum_dkspel , cro_dkspel , hue_red_ )
+hexspbl_dk = tohex( lum_dkspel , cro_dkspel , hue_blue )
+hexspcy_dk = tohex( lum_dkspel , cro_dkspel , hue_cyan )
+hexspmg_dk = tohex( lum_dkspel , cro_dkspel , hue_mgnt )
 
 print 'Author:          nightsense'
 print 'Maintainer:      nightsense'
@@ -308,10 +323,10 @@ print 'Color:      gryc %s ~' % hexgry1_dk
 print 'Color:      srch %s ~' % hexsrch_lt
 print 'Color:      grys %s ~' % hexgry1_dk
 print 'Color:      gryp %s ~' % hexgry3_dk
-print 'Color:      sprd %s ~' % '#ff0000'
-print 'Color:      spbl %s ~' % '#0087ff'
-print 'Color:      spcy %s ~' % '#008787'
-print 'Color:      spmg %s ~' % '#d700d7'
+print 'Color:      sprd %s ~' % hexsprd_lt
+print 'Color:      spbl %s ~' % hexspbl_lt
+print 'Color:      spcy %s ~' % hexspcy_lt
+print 'Color:      spmg %s ~' % hexspmg_lt
 print 'Color:      red_ %s ~' % hexred__lt
 print 'Color:      gold %s ~' % hexgold_lt
 print 'Color:      gren %s ~' % hexgren_lt
@@ -320,13 +335,13 @@ print 'Color:      blue %s ~' % hexblue_lt
 print 'Color:      mgnt %s ~' % hexmgnt_lt
 print 'Include:    _common.colortemplate'
 print ''
-print_airline('stellarized','light')
+print_airline('snow','light')
 print ''
-print_lightline('stellarized','light')
+print_lightline('snow','light')
 print ''
-print_shell('stellarized','light')
+print_shell('snow','light')
 print ''
-print_fish('stellarized','light')
+print_fish('snow','light')
 print ''
 print 'Background: dark'
 print 'Color:      gry0 %s ~' % hexgry0_dk
@@ -337,10 +352,10 @@ print 'Color:      gryc %s ~' % hexgry1_lt
 print 'Color:      srch %s ~' % hexsrch_dk
 print 'Color:      grys %s ~' % hexgry1_lt
 print 'Color:      gryp %s ~' % hexgry3_lt
-print 'Color:      sprd %s ~' % '#ff5f5f'
-print 'Color:      spbl %s ~' % '#5fafff'
-print 'Color:      spcy %s ~' % '#00afaf'
-print 'Color:      spmg %s ~' % '#d787d7'
+print 'Color:      sprd %s ~' % hexsprd_dk
+print 'Color:      spbl %s ~' % hexspbl_dk
+print 'Color:      spcy %s ~' % hexspcy_dk
+print 'Color:      spmg %s ~' % hexspmg_dk
 print 'Color:      red_ %s ~' % hexred__dk
 print 'Color:      gold %s ~' % hexgold_dk
 print 'Color:      gren %s ~' % hexgren_dk
@@ -349,10 +364,10 @@ print 'Color:      blue %s ~' % hexblue_dk
 print 'Color:      mgnt %s ~' % hexmgnt_dk
 print 'Include:    _common.colortemplate'
 print ''
-print_airline('stellarized','dark')
+print_airline('snow','dark')
 print ''
-print_lightline('stellarized','dark')
+print_lightline('snow','dark')
 print ''
-print_shell('stellarized','dark')
+print_shell('snow','dark')
 print ''
-print_fish('stellarized','dark')
+print_fish('snow','dark')
