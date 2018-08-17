@@ -335,13 +335,13 @@ print 'Color:      blue %s ~' % hexblue_lt
 print 'Color:      mgnt %s ~' % hexmgnt_lt
 print 'Include:    _common.colortemplate'
 print ''
-print_airline('snow','light')
+print_airline('stellarized','light')
 print ''
-print_lightline('snow','light')
+print_lightline('stellarized','light')
 print ''
-print_shell('snow','light')
+print_shell('stellarized','light')
 print ''
-print_fish('snow','light')
+print_fish('stellarized','light')
 print ''
 print 'Background: dark'
 print 'Color:      gry0 %s ~' % hexgry0_dk
@@ -364,10 +364,10 @@ print 'Color:      blue %s ~' % hexblue_dk
 print 'Color:      mgnt %s ~' % hexmgnt_dk
 print 'Include:    _common.colortemplate'
 print ''
-print_airline('snow','dark')
+print_airline('stellarized','dark')
 print ''
-print_lightline('snow','dark')
+print_lightline('stellarized','dark')
 print ''
-print_shell('snow','dark')
+print_shell('stellarized','dark')
 print ''
-print_fish('snow','dark')
+print_fish('stellarized','dark')

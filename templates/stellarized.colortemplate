@@ -26,8 +26,8 @@ Color:      blue #006bd6 ~
 Color:      mgnt #a940b6 ~
 Include:    _common.colortemplate
 
-auxfile autoload/airline/themes/snow_light.vim
-let g:airline#themes#snow_light#palette = {}
+auxfile autoload/airline/themes/stellarized_light.vim
+let g:airline#themes#stellarized_light#palette = {}
 
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
@@ -43,30 +43,30 @@ let s:visl = [ s:gry0[0] , s:blue[0] , s:gry0[1] , s:blue[1] ]
 let s:rplc = [ s:gry0[0] , s:red_[0] , s:gry0[1] , s:red_[1] ]
 let s:inac = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 
-let g:airline#themes#snow_light#palette.normal =
+let g:airline#themes#stellarized_light#palette.normal =
   \ airline#themes#generate_color_map( s:nrm1 , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_light#palette.insert =
+let g:airline#themes#stellarized_light#palette.insert =
   \ airline#themes#generate_color_map( s:insr , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_light#palette.visual =
+let g:airline#themes#stellarized_light#palette.visual =
   \ airline#themes#generate_color_map( s:visl , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_light#palette.replace =
+let g:airline#themes#stellarized_light#palette.replace =
   \ airline#themes#generate_color_map( s:rplc , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_light#palette.inactive =
+let g:airline#themes#stellarized_light#palette.inactive =
   \ airline#themes#generate_color_map( s:inac , s:inac , s:inac )
 
 if !get(g:, "loaded_ctrlp", 0)
   finish
 endif
 
-let g:airline#themes#snow_light#palette.ctrlp =
+let g:airline#themes#stellarized_light#palette.ctrlp =
   \ airline#extensions#ctrlp#generate_color_map( s:nrm2 , s:nrm1 , s:nrm2 )
 endauxfile
 
-auxfile autoload/lightline/colorscheme/snow_light.vim
+auxfile autoload/lightline/colorscheme/stellarized_light.vim
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
 let s:gry3 = [ "@guigry3", @termgry3 ]
@@ -102,15 +102,15 @@ let s:p.tabline.right   = copy(s:p.normal.middle)
 let s:p.normal.error    = [[ s:red_, s:gry0 ]]
 let s:p.normal.warning  = [[ s:mgnt, s:gry0 ]]
 
-let g:lightline#colorscheme#snow_light#palette =
+let g:lightline#colorscheme#stellarized_light#palette =
   \ lightline#colorscheme#flatten(s:p)
 endauxfile
 
-auxfile shell/snow_light.sh
+auxfile shell/stellarized_light.sh
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# snow_light scheme by nightsense (https://github.com/nightsense/stellarized)
+# stellarized_light scheme by nightsense (https://github.com/nightsense/stellarized)
 
 color00="@guigry0" # Base 00 - Black
 color01="@guired_" # Base 08 - Red
@@ -215,8 +215,8 @@ unset color_foreground
 unset color_background
 endauxfile
 
-auxfile shell/snow_light.fish
-# snow_light fish shell theme by nightsense (https://github.com/nightsense/stellarized)
+auxfile shell/stellarized_light.fish
+# stellarized_light fish shell theme by nightsense (https://github.com/nightsense/stellarized)
 
 # normal text
 set fish_color_host              @guigry3
@@ -286,8 +286,8 @@ Color:      blue #3890de ~
 Color:      mgnt #ba71c0 ~
 Include:    _common.colortemplate
 
-auxfile autoload/airline/themes/snow_dark.vim
-let g:airline#themes#snow_dark#palette = {}
+auxfile autoload/airline/themes/stellarized_dark.vim
+let g:airline#themes#stellarized_dark#palette = {}
 
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
@@ -303,30 +303,30 @@ let s:visl = [ s:gry0[0] , s:blue[0] , s:gry0[1] , s:blue[1] ]
 let s:rplc = [ s:gry0[0] , s:red_[0] , s:gry0[1] , s:red_[1] ]
 let s:inac = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
 
-let g:airline#themes#snow_dark#palette.normal =
+let g:airline#themes#stellarized_dark#palette.normal =
   \ airline#themes#generate_color_map( s:nrm1 , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_dark#palette.insert =
+let g:airline#themes#stellarized_dark#palette.insert =
   \ airline#themes#generate_color_map( s:insr , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_dark#palette.visual =
+let g:airline#themes#stellarized_dark#palette.visual =
   \ airline#themes#generate_color_map( s:visl , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_dark#palette.replace =
+let g:airline#themes#stellarized_dark#palette.replace =
   \ airline#themes#generate_color_map( s:rplc , s:nrm2 , s:nrm2 )
 
-let g:airline#themes#snow_dark#palette.inactive =
+let g:airline#themes#stellarized_dark#palette.inactive =
   \ airline#themes#generate_color_map( s:inac , s:inac , s:inac )
 
 if !get(g:, "loaded_ctrlp", 0)
   finish
 endif
 
-let g:airline#themes#snow_dark#palette.ctrlp =
+let g:airline#themes#stellarized_dark#palette.ctrlp =
   \ airline#extensions#ctrlp#generate_color_map( s:nrm2 , s:nrm1 , s:nrm2 )
 endauxfile
 
-auxfile autoload/lightline/colorscheme/snow_dark.vim
+auxfile autoload/lightline/colorscheme/stellarized_dark.vim
 let s:gry0 = [ "@guigry0", @termgry0 ]
 let s:gry1 = [ "@guigry1", @termgry1 ]
 let s:gry3 = [ "@guigry3", @termgry3 ]
@@ -362,15 +362,15 @@ let s:p.tabline.right   = copy(s:p.normal.middle)
 let s:p.normal.error    = [[ s:red_, s:gry0 ]]
 let s:p.normal.warning  = [[ s:mgnt, s:gry0 ]]
 
-let g:lightline#colorscheme#snow_dark#palette =
+let g:lightline#colorscheme#stellarized_dark#palette =
   \ lightline#colorscheme#flatten(s:p)
 endauxfile
 
-auxfile shell/snow_dark.sh
+auxfile shell/stellarized_dark.sh
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# snow_dark scheme by nightsense (https://github.com/nightsense/stellarized)
+# stellarized_dark scheme by nightsense (https://github.com/nightsense/stellarized)
 
 color00="@guigry0" # Base 00 - Black
 color01="@guired_" # Base 08 - Red
@@ -475,8 +475,8 @@ unset color_foreground
 unset color_background
 endauxfile
 
-auxfile shell/snow_dark.fish
-# snow_dark fish shell theme by nightsense (https://github.com/nightsense/stellarized)
+auxfile shell/stellarized_dark.fish
+# stellarized_dark fish shell theme by nightsense (https://github.com/nightsense/stellarized)
 
 # normal text
 set fish_color_host              @guigry3

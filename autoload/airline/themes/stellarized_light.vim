@@ -1,11 +1,11 @@
 let g:airline#themes#stellarized_light#palette = {}
 
-let s:gry0 = [ "#fdf2e9", 255 ]
-let s:gry1 = [ "#efe1d4", 254 ]
-let s:gry3 = [ "#575c71", 60 ]
-let s:red_ = [ "#c93c4e", 161 ]
-let s:gren = [ "#008228", 28 ]
-let s:blue = [ "#0070cf", 25 ]
+let s:gry0 = [ "#fceee0", 255 ]
+let s:gry1 = [ "#ecdac9", 223 ]
+let s:gry3 = [ "#454b62", 60 ]
+let s:red_ = [ "#d02a48", 161 ]
+let s:gren = [ "#008016", 28 ]
+let s:blue = [ "#006bd6", 26 ]
 
 let s:nrm1 = [ s:gry0[0] , s:gry3[0] , s:gry0[1] , s:gry3[1] ]
 let s:nrm2 = [ s:gry3[0] , s:gry1[0] , s:gry3[1] , s:gry1[1] ]
