@@ -28,9 +28,9 @@
 
 <h5>The stellarized theme takes this basic idea and shifts<br>the base hues to reflect the <a href='http://www.vendian.org/mncharity/dir3/starcolor/details.html'>colours of the stars</a>.</h5>
 
-<h5>Specifically, dark base colors are shifted bluewise (to<br>the approximate "hot star hue"), while light base colors<br>are shifted orangewise (to the "cold star hue").</h5>
+<h5>Specifically, dark base colors are shifted bluewise (to the<br>approximate "hot star hue"), while light base colors<br>are shifted orangewise (to the "cold star hue").</h5>
 
-<h5>stellarized is a special adaptation of <a href='https://github.com/nightsense/stellarized'>stellarized</a>.</h5>
+<h5>stellarized is a special adaptation of <a href='https://github.com/nightsense/snow'>snow</a>.</h5>
 
 </td></tr>
 
@@ -154,8 +154,52 @@ let &t_EI = "\<Esc>[2 q"
 
 ...which sets the cursor to a vertical line for insert mode, underline for replace mode, and block for normal mode.
 
+## shell
+
+### colors
+
+Many terminal emulators can be themed by sourcing the color-setting shell scripts included with stellarized. The path to these scripts will depend on your plugin management method.
+
+For instance, if you use vim-plug and want to apply the dark stellarized theme to your bash or zsh shell, add the following to `~/.bashrc` or `~/.zshrc`:
+
+```
+[ -n "$PS1" ] && sh ~/.vim/plugged/stellarized/shell/stellarized_dark.sh
+```
+
+Or for the fish shell, add to `~/.config/fish/config.fish`:
+
+```
+if status --is-interactive
+  sh ~/.vim/plugged/stellarized/shell/stellarized_dark.sh
+end
+```
+
+If you use vundle, replace `plugged` in the above paths with `bundle`.
+
+Replace `dark` with `light` for the light theme.
+
+### fish syntax
+
+Again, the script path will depend on your plugin management method.
+
+For the dark theme in a vim-plug setup, add to `~/.config/fish/config.fish`:
+
+```
+source ~/.vim/plugged/stellarized/shell/stellarized_dark.fish
+```
+
 ---
 
-###### released under the [MIT license](https://opensource.org/licenses/MIT)
-###### generated with [Colortemplate](https://github.com/lifepillar/vim-colortemplate)
-###### night sky photo by [ESO/S. Brunier (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg)
+<a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square' /></a>
+&nbsp;&nbsp;&nbsp;
+<a href='https://www.python.org/'><img src='https://img.shields.io/badge/made%20with-Python-306998.svg?style=flat-square' /></a>
+&nbsp;&nbsp;&nbsp;
+<a href='https://fishshell.com/'><img src='https://img.shields.io/badge/made%20with-fish-d2232a.svg?style=flat-square' /></a>
+&nbsp;&nbsp;&nbsp;
+<a href='https://github.com/lifepillar/vim-colortemplate'><img src='https://img.shields.io/badge/made%20with-Colortemplate-007f00.svg?style=flat-square' /></a>
+&nbsp;&nbsp;&nbsp;
+<a href='https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html'><img src='https://img.shields.io/badge/meets%20standard-4.5%3A1%20readability%20contrast-005a9c.svg?style=flat-square' /></a>
+
+<h6>The 4.5:1 <a href='https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-73-head'>W3C contrast ratio standard</a> for readability is met by all text/background combinations, with the exception of some transient highlighting (e.g. cursorline/column), which nonetheless well exceeds the minimal ISO 3:1 standard.</h6>
+
+<h6>image credit: night sky photo by <a href='https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg'>ESO/S. Brunier (CC BY 4.0)</a></h6>
