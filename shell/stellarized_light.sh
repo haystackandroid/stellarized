@@ -4,12 +4,12 @@
 # stellarized_light scheme by nightsense (https://github.com/nightsense/stellarized)
 
 color00="#fceee0" # Base 00 - Black
-color01="#d02a48" # Base 08 - Red
-color02="#008016" # Base 0B - Green
-color03="#8d6700" # Base 0A - Yellow
-color04="#006bd6" # Base 0D - Blue
-color05="#a940b6" # Base 0E - Magenta
-color06="#00798b" # Base 0C - Cyan
+color01="#c6394c" # Base 08 - Red
+color02="#007f25" # Base 0B - Green
+color03="#8b6800" # Base 0A - Yellow
+color04="#006dcc" # Base 0D - Blue
+color05="#a348ae" # Base 0E - Magenta
+color06="#007989" # Base 0C - Cyan
 color07="#454b62" # Base 05 - White
 color08="#ecdac9" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
@@ -67,7 +67,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   put_template_custom Pg #454b62 # foreground
   put_template_custom Ph #fceee0 # background
   put_template_custom Pi #454b62 # bold color
-  put_template_custom Pj #006bd6 # selection color
+  put_template_custom Pj #006dcc # selection color
   put_template_custom Pk #fceee0 # selected text color
   put_template_custom Pl #454b62 # cursor
   put_template_custom Pm #fceee0 # cursor text

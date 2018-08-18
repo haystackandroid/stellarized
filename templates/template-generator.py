@@ -262,8 +262,8 @@ hue_cyan = 202.5
 hue_blue = 262.5
 hue_mgnt = 322.5
 
-cro_ltacnt = phic(0.75)
-cro_dkacnt = phic(1.50)
+cro_ltacnt = phic(1.00)
+cro_dkacnt = phic(2.00)
 
 hexgry0_lt = tohex( phic(0.11) , phic(5.00) , hue_bas0 )
 hexgry1_lt = tohex( phic(0.26) , phic(4.50) , hue_bas0 )
@@ -275,18 +275,18 @@ hexgry1_dk = tohex( phic(3.27) , phic(4.50) , hue_bas1 )
 hexgry2_dk = tohex( phic(1.12) , phic(4.00) , hue_bas0 )
 hexgry3_dk = tohex( phic(0.62) , phic(4.50) , hue_bas0 )
 
-hexred__lt = tohex( phic(1.56) , cro_ltacnt , hue_red_ )
+hexred__lt = tohex( phic(1.57) , cro_ltacnt , hue_red_ )
 hexgold_lt = tohex( phic(1.59) , cro_ltacnt , hue_gold )
-hexgren_lt = tohex( phic(1.64) , cro_ltacnt , hue_gren )
-hexcyan_lt = tohex( phic(1.85) , cro_ltacnt , hue_cyan )
-hexblue_lt = tohex( phic(1.82) , cro_ltacnt , hue_blue )
+hexgren_lt = tohex( phic(1.62) , cro_ltacnt , hue_gren )
+hexcyan_lt = tohex( phic(1.80) , cro_ltacnt , hue_cyan )
+hexblue_lt = tohex( phic(1.76) , cro_ltacnt , hue_blue )
 hexmgnt_lt = tohex( phic(1.61) , cro_ltacnt , hue_mgnt )
 
 hexred__dk = tohex( phic(1.11) , cro_dkacnt , hue_red_ )
 hexgold_dk = tohex( phic(1.11) , cro_dkacnt , hue_gold )
-hexgren_dk = tohex( phic(1.13) , cro_dkacnt , hue_gren )
-hexcyan_dk = tohex( phic(1.20) , cro_dkacnt , hue_cyan )
-hexblue_dk = tohex( phic(1.16) , cro_dkacnt , hue_blue )
+hexgren_dk = tohex( phic(1.12) , cro_dkacnt , hue_gren )
+hexcyan_dk = tohex( phic(1.15) , cro_dkacnt , hue_cyan )
+hexblue_dk = tohex( phic(1.15) , cro_dkacnt , hue_blue )
 hexmgnt_dk = tohex( phic(1.13) , cro_dkacnt , hue_mgnt )
 
 hexsrch_lt = tohex( phic(0.25) , phic(0.25) , hue_gold )

@@ -18,12 +18,12 @@ Color:      sprd #f7003c ~
 Color:      spbl #0082ff ~
 Color:      spcy #0093b3 ~
 Color:      spmg #c709dd ~
-Color:      red_ #d02a48 ~
-Color:      gold #8d6700 ~
-Color:      gren #008016 ~
-Color:      cyan #00798b ~
-Color:      blue #006bd6 ~
-Color:      mgnt #a940b6 ~
+Color:      red_ #c6394c ~
+Color:      gold #8b6800 ~
+Color:      gren #007f25 ~
+Color:      cyan #007989 ~
+Color:      blue #006dcc ~
+Color:      mgnt #a348ae ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_light.vim
@@ -278,12 +278,12 @@ Color:      sprd #ff707e ~
 Color:      spbl #00b4ff ~
 Color:      spcy #00c8d9 ~
 Color:      spmg #ee81f9 ~
-Color:      red_ #d96a6f ~
-Color:      gold #a98834 ~
-Color:      gren #499d54 ~
-Color:      cyan #009ba6 ~
-Color:      blue #3890de ~
-Color:      mgnt #ba71c0 ~
+Color:      red_ #ca7375 ~
+Color:      gold #a58949 ~
+Color:      gren #5c9a61 ~
+Color:      cyan #009ba2 ~
+Color:      blue #578fcc ~
+Color:      mgnt #b178b5 ~
 Include:    _common.colortemplate
 
 auxfile autoload/airline/themes/stellarized_dark.vim
