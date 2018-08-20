@@ -9,11 +9,11 @@ Background: light
 Color:      gry0 #fceee0 ~
 Color:      gry1 #ecdac9 ~
 Color:      gry2 #666c85 ~
-Color:      gry3 #454b62 ~
+Color:      gry3 #4a5067 ~
 Color:      gryc #2d3243 ~
 Color:      srch #ffd506 ~
 Color:      grys #2d3243 ~
-Color:      gryp #c5b3a3 ~
+Color:      gryp #bead9d ~
 Color:      sprd #f7003c ~
 Color:      spbl #0082ff ~
 Color:      spcy #0093b3 ~
@@ -269,11 +269,11 @@ Background: dark
 Color:      gry0 #222532 ~
 Color:      gry1 #2d3243 ~
 Color:      gry2 #9d8875 ~
-Color:      gry3 #c5b3a3 ~
+Color:      gry3 #bead9d ~
 Color:      gryc #ecdac9 ~
 Color:      srch #8d6e19 ~
 Color:      grys #ecdac9 ~
-Color:      gryp #454b62 ~
+Color:      gryp #4a5067 ~
 Color:      sprd #ff707e ~
 Color:      spbl #00b4ff ~
 Color:      spcy #00c8d9 ~

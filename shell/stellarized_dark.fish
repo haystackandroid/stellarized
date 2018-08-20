@@ -1,10 +1,10 @@
 # stellarized_dark fish shell theme by nightsense (https://github.com/nightsense/stellarized)
 
 # normal text
-set fish_color_host              #c5b3a3
-set fish_color_normal            #c5b3a3
-set fish_pager_color_completion  #c5b3a3
-set fish_pager_color_description #c5b3a3
+set fish_color_host              #bead9d
+set fish_color_normal            #bead9d
+set fish_pager_color_completion  #bead9d
+set fish_pager_color_description #bead9d
 
 # muted text
 set fish_color_autosuggestion    #9d8875
@@ -17,9 +17,9 @@ set fish_pager_color_progress    #222532 --background=#9d8875
 set fish_color_valid_path        --underline
 
 # highlit text
-set fish_color_match             --background=#454b62
-set fish_color_search_match      --background=#454b62
-set fish_color_selection         --background=#454b62
+set fish_color_match             --background=#4a5067
+set fish_color_search_match      --background=#4a5067
+set fish_color_selection         --background=#4a5067
 
 # red errors/warnings
 set fish_color_cancel            #ca7375
